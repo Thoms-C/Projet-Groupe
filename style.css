@@ -146,6 +146,7 @@ header nav #inscript a:hover {
     border-bottom: none;
 }
 
+
 /*///////////////// 
 ///    BODY     // 
 ////////////////*/
@@ -850,6 +851,8 @@ footer{
     background-color: #cbc7c8;
     padding: 10px;
     list-style-type: none;
+    margin-top: 2rem;
+    height: 6rem;
 }
 
 .logo_footer {
@@ -857,7 +860,10 @@ footer{
     align-content: center;
     align-items: center;
 }
-
+footer section ul {
+    margin: 0;
+    padding: 0;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -879,6 +885,7 @@ footer{
 .a_footer{
     text-decoration: none;
     color: white;
+    padding-left: 1rem;
 }
 .favicon {
     padding-left: 5vw;
@@ -894,6 +901,7 @@ a:hover{
 .center_footer{
     align-items: center;
     justify-content: space-around;
+    padding: 0;
 }
 
 .git{

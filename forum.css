@@ -85,7 +85,12 @@ width: 15%;
     color: #131212;
 }
 
-@media screen and (max-width: 961px) {
-    table {
-        background-color: red;
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+
+table{
+    background-color: #eaeaea;
     }
+}
