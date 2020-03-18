@@ -34,13 +34,17 @@ header nav {
     opacity: 0.8;
 }
 
+header ul  {
+    padding: 0;
+}
+
 header nav ul {
     list-style-type: none;
 }
 
 header nav ul li {
     float: left;
-    width: 14.28%;
+    width: 14%;
     text-align: center;
     position: relative;
 }
@@ -104,15 +108,42 @@ header nav a:hover {
 #site-search {
     color: #1995AD;
     margin-top: 10px;
+    display: none;
 }
 
-.logo {
-    width: 40px;
-    padding: 0;
-}
-#connect{
+#connect {
     font-size: 20px;
     color: #416777;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    height: 50px;
+}
+
+#connect:hover{
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+header nav #connect a:hover {
+    border-bottom: none;
+}
+
+#inscript {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    height: 50px;
+    font-size: 20px;
+    color: #416777;
+}
+#inscript:hover {
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+header nav #inscript a:hover {
+    border-bottom: none;
 }
 
 
@@ -370,9 +401,7 @@ header nav a:hover {
     height: 800px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .vidstuto article {
@@ -821,8 +850,9 @@ header nav a:hover {
 footer{
     background-color: #cbc7c8;
     padding: 10px;
-    padding-left: 6rem;
     list-style-type: none;
+    margin-top: 2rem;
+    height: 8vw;
 }
 
 .logo_footer {
@@ -831,6 +861,10 @@ footer{
     align-items: center;
 }
 
+footer section ul {
+    margin: 0;
+    padding: 0;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -842,7 +876,7 @@ footer{
 
 .logo_footer img{
     width: auto;
-    height: 100px;
+    height: 5vw;
 }
 
 .li_footer{
@@ -852,6 +886,7 @@ footer{
 .a_footer{
     text-decoration: none;
     color: white;
+    padding-left: 1rem;
 }
 .favicon {
     padding-left: 5vw;
@@ -867,6 +902,7 @@ a:hover{
 .center_footer{
     align-items: center;
     justify-content: space-around;
+    padding: 0;
 }
 
 .git{
@@ -877,8 +913,74 @@ ul :nth-child(5) {
     flex-grow: 3;
 }
 
+/*/////////////////
+///  RESPONSIVE  //
+/////////////////*/
 
+@media screen and (max-width: 961px) {
+    .carousel {
+        display: none;
+    }
 
-
+    .conteneur{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .ct1 {
+        margin: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 230px;
+    }
+    .ct2 {
+        margin: 10px;
+        height: 230px;
+        background-position: center center;
+    }
+    .ct3 {
+        margin: 10px;
+        height: 230px;
+        background-position: center center;
+    }
+    .ct4 {
+        margin: 10px;
+        height: 230px;
+        background-position: center center;
+    }
+    .ct5 {
+        margin: 10px;
+        height: 230px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .vidstuto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 175vh;
+    }
+    header nav ul li ul a {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li {
+        width: 14%;
+    }
+    #site-search {
+        display: block;
+        margin-left: 45vw;
+        padding-right: 200px;
+    }
+    .deroulant {
+        display: none;
+    }
+    #connect {
+        display: block;
+    }
+    #inscript {
+        display: block;
+    }
+}
 
 

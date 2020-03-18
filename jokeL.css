@@ -77,11 +77,10 @@ div li{
  
 }
 
-/*//// MEDIA QUERY//// */
-
-@media screen and (max-width : 800px){
+/*responsive*/
+@media screen and (max-width : 961px){
     .blague h3 {
         color: tomato;  
-    }
-    
+    } 
 }
+
