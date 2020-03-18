@@ -822,7 +822,7 @@ footer{
     background-color: #cbc7c8;
     list-style-type: none;
     margin-top: 2rem;
-    height: 6rem;
+    height: 8vw;
 }
 
 .logo_footer {
@@ -830,6 +830,7 @@ footer{
     align-content: center;
     align-items: center;
 }
+
 footer section ul {
     margin: 0;
     padding: 0;
@@ -845,7 +846,7 @@ footer section ul {
 
 .logo_footer img{
     width: auto;
-    height: 100px;
+    height: 5vw;
 }
 
 .li_footer{
