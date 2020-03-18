@@ -34,13 +34,17 @@ header nav {
     opacity: 0.8;
 }
 
+header ul  {
+    padding: 0;
+}
+
 header nav ul {
     list-style-type: none;
 }
 
 header nav ul li {
     float: left;
-    width: 14.28%;
+    width: 12.5%;
     text-align: center;
     position: relative;
 }
@@ -106,10 +110,6 @@ header nav a:hover {
     margin-top: 10px;
 }
 
-.logo {
-    width: 40px;
-    padding: 0;
-}
 #connect{
     font-size: 20px;
     color: #416777;
@@ -873,8 +873,48 @@ ul :nth-child(5) {
     flex-grow: 3;
 }
 
+/*/////////////////
+///  RESPONSIVE  //
+/////////////////*/
 
+@media screen and (max-width: 961px) {
+    .carousel {
+        display: none;
+    }
 
-
+    .conteneur{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .ct1 {
+        margin: 10px;
+        height: 300px;
+        background-position: center center;
+    }
+    .ct1:hover {
+        opacity: 1;
+    }
+    .ct2 {
+        margin: 10px;
+        height: 300px;
+        background-position: center center;
+    }
+    .ct3 {
+        margin: 10px;
+        height: 300px;
+        background-position: center center;
+    }
+    .ct4 {
+        margin: 10px;
+        height: 300px;
+        background-position: center center;
+    }
+    .ct5 {
+        margin: 10px;
+        height: 300px;
+        background-position: center center;
+    }
+}
 
 
