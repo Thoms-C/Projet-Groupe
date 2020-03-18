@@ -84,3 +84,13 @@ width: 15%;
     text-decoration: none;
     color: #131212;
 }
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800 px) {
+
+#contener table{
+    background-color: red;
+}
+}
