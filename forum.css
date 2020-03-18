@@ -1,0 +1,86 @@
+/*contener principale*/
+
+#contener{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/*bloc gauche forum*/
+.Lcontent{
+    width: 70%;
+    text-align: justify;
+    margin: 5px 0 0 10px;
+}
+
+
+.Lcontent h2 {
+    background-color: #134256;
+    color: white;
+}
+
+
+/*contenu bloc tableau forum*/
+
+
+table{
+    background-color: #eaeaea;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    border: 1px solid goldenrod;
+}
+
+
+
+.Top{
+    width: 65%;
+    padding-left: 10px;
+    
+}
+
+.Top p {
+    padding-left: 10px;
+}
+
+
+.Voi{
+width: 20%;
+text-align: center;
+}
+
+.Pos{
+width: 15%;
+text-align: center;
+}
+
+.Dat{
+width: 15%;
+
+}
+
+/*bloc droit forum*/
+
+.Rcontent{
+    width: 35%;
+    margin: 5px 0 0 20px;
+    
+}
+
+.Rcontent h2 {
+    background-color: #134256;
+    color: white;
+}
+
+.Rcontent h3 {
+    background-color: #134256;
+    color: white;
+    margin:10px 0 0 0;
+}
+
+.Rcontent ul li {
+    margin-top: 5px;
+}
+
+.Rcontent ul li a {
+    text-decoration: none;
+    color: #131212;
+}
