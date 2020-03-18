@@ -30,10 +30,8 @@ main{
 .blague{
     display: flex;
     justify-content: space-around;
-    
-   
 }
-.blague h3{
+    .blague h3{
     color: #d7e769;
     font-size: 30px;
     text-align: center;
@@ -46,12 +44,6 @@ div li{
     display: flex;
     flex-wrap: wrap;
     color: white;
-}
-
-div{
-    width: 30%;
-    position: absolute;
-    overflow: hidden;
 }
 
 .dave{
@@ -75,9 +67,12 @@ div{
     position: relative;
     overflow: hidden;
 }
-.survol :hover{
-    opacity: 20%;
-}
 
 /*//// MEDIA QUERY//// */
 
+@media screen and (max-width : 961px){
+    .blague h3 {
+        color: tomato;  
+    }
+    
+}
