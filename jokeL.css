@@ -8,7 +8,7 @@ main{
     background-image: url(images/fondJoke.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 200px;
     margin-top: 20px ;
     display: flex;
     justify-content: center;
@@ -30,11 +30,12 @@ main{
 .blague{
     display: flex;
     justify-content: space-around;
+    height: 200px;
 }
     .blague h3{
-    color: #d7e769;
     font-size: 30px;
     text-align: center;
+    margin-top: 70px;
 }
 
 
@@ -45,32 +46,40 @@ div li{
     flex-wrap: wrap;
     color: white;
 }
+/* fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus*/
+.survol{
+    display: none;
+}
 
+.blague div{
+    height: 200px;
+    width: 300px;
+}
 .dave{
+    
     background-image: url(images/dave.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-    overflow: hidden;
+    position: relative; 
+    width: 20%;
+    height: 70%;
 }
 .data{
     background-image: url(images/data.jpg);
     background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
+    background-position: center; 
 }
 .perdu{
+    color: white;
     background-image: url(images/perdu.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-    overflow: hidden;
+ 
 }
 
 /*//// MEDIA QUERY//// */
 
-@media screen and (max-width : 961px){
+@media screen and (max-width : 800px){
     .blague h3 {
         color: tomato;  
     }
