@@ -1,0 +1,83 @@
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px; 
+}
+/*////DIMENSION DU BANDEAU////*/
+.carambar{
+    background-image: url(images/fondJoke.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jokeLoic{
+    font-size: 8vw;
+    text-align: center;  
+}
+
+/*//PHOTO DES BODIES//*/
+.bodie{
+    height: 50px;
+    width: 45px;
+    padding-left: 5%;
+}
+
+/*mise en page  blagues*/
+.blague{
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.blague h3{
+    color: #d7e769;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*mise en page des sections de blagues*/
+div li{
+    padding-bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+div{
+    width: 30%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.dave{
+    background-image: url(images/dave.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.data{
+    background-image: url(images/data.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.perdu{
+    background-image: url(images/perdu.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.survol :hover{
+    opacity: 20%;
+}
+
+/*//// MEDIA QUERY//// */
+
