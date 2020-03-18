@@ -77,10 +77,21 @@ div li{
 }
 =======
 
+<<<<<<< HEAD
+/*/////////////////
+///  RESPONSIVE  //
+/////////////////*/
+
+@media screen and (max-width: 961px) {
+    .blague {
+        display: none;
+    }
+}
+=======
 @media screen and (max-width : 961px){
     .blague h3 {
         color: tomato;  
     }
     
 }
->>>>>>> eaf272415fc7d64b9b0bb52587faf6109f0fb012
+

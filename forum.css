@@ -88,9 +88,9 @@ width: 15%;
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 800 px) {
+@media screen and (max-width: 800px) {
 
-#contener table{
-    background-color: red;
-}
+table{
+    background-color: #eaeaea;
+    }
 }
