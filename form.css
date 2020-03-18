@@ -1,0 +1,92 @@
+/*///////////////// 
+///    POPUP     // 
+////////////////*/
+
+/*BODY*/
+body{
+    margin-left: 0;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*filter: blur(4px);*/
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /*display: none;*/
+}
+
+/*POPUP*/
+
+.popup{
+  width: 30rem;
+  height: 40rem;
+  border: 2px solid orange;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  text-align: center; 
+  border-radius: 10px; 
+}
+
+/*FORM*/
+
+.popup form{
+    min-height: calc(644px - 99px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup .h2, label{
+    font-family: 'Baloo Chettan 2', cursive;
+    color: orange;
+}
+
+.popup .h2{
+    font-size: 30px;
+}
+
+.popup label{
+    font-size: 20px;
+}
+
+.popup input{
+    width: 80%;
+    margin-bottom:5px;
+    border-radius: 10px;
+    border: orange solid 1px;
+    box-shadow: none;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+
+.popup input[type=submit]{
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-bottom: 2px;
+}
+
+.popup input[type=submit]:hover{
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+}
+
+.popup form p{
+    color: white;
+}
+
+.popup form p a{
+    color: orange;
+    text-decoration: none;
+}
