@@ -84,3 +84,8 @@ width: 15%;
     text-decoration: none;
     color: #131212;
 }
+
+@media screen and (max-width: 961px) {
+    table {
+        background-color: red;
+    }

@@ -44,7 +44,7 @@ header nav ul {
 
 header nav ul li {
     float: left;
-    width: 12.5%;
+    width: 14%;
     text-align: center;
     position: relative;
 }
@@ -108,11 +108,42 @@ header nav a:hover {
 #site-search {
     color: #1995AD;
     margin-top: 10px;
+    display: none;
 }
 
-#connect{
+#connect {
     font-size: 20px;
     color: #416777;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    height: 50px;
+}
+
+#connect:hover{
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+header nav #connect a:hover {
+    border-bottom: none;
+}
+
+#inscript {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    height: 50px;
+    font-size: 20px;
+    color: #416777;
+}
+#inscript:hover {
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+header nav #inscript a:hover {
+    border-bottom: none;
 }
 
 /*///////////////// 
@@ -889,31 +920,57 @@ ul :nth-child(5) {
     }
     .ct1 {
         margin: 10px;
-        height: 300px;
-        background-position: center center;
-    }
-    .ct1:hover {
-        opacity: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 230px;
     }
     .ct2 {
         margin: 10px;
-        height: 300px;
+        height: 230px;
         background-position: center center;
     }
     .ct3 {
         margin: 10px;
-        height: 300px;
+        height: 230px;
         background-position: center center;
     }
     .ct4 {
         margin: 10px;
-        height: 300px;
+        height: 230px;
         background-position: center center;
     }
     .ct5 {
         margin: 10px;
-        height: 300px;
+        height: 230px;
         background-position: center center;
+        background-size: cover;
+    }
+    .vidstuto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 175vh;
+    }
+    header nav ul li ul a {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li {
+        width: 14%;
+    }
+    #site-search {
+        display: block;
+        margin-left: 45vw;
+        padding-right: 200px;
+    }
+    .deroulant {
+        display: none;
+    }
+    #connect {
+        display: block;
+    }
+    #inscript {
+        display: block;
     }
 }
 
