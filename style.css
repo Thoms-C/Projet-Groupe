@@ -3,6 +3,7 @@
 ////////////////*/
 
 *{
+    margin: 0;
     font-family: 'Baloo Chettan 2', cursive;;
 }
 
@@ -847,31 +848,18 @@ header nav #inscript a:hover {
 ///    FOOTER    //
 /////////////////*/
 
-footer{
+footer section ul{
     background-color: #cbc7c8;
-    padding: 10px;
-    list-style-type: none;
     margin-top: 2rem;
     height: 8vw;
-}
-
-.logo_footer {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-footer section ul {
-    margin: 0;
+    position: relative;
     padding: 0;
 }
+
 .flex{
     display: flex;
     align-items: center;
-}
-
-.flex li {
-    list-style-type: none;
+    justify-content: space-around;
 }
 
 .logo_footer img{
@@ -879,39 +867,16 @@ footer section ul {
     height: 5vw;
 }
 
-.li_footer{
-    list-style-type: none;
-}
-
 .a_footer{
     text-decoration: none;
     color: white;
-    padding-left: 1rem;
-}
-.favicon {
-    padding-left: 5vw;
-}
-.twitter {
-    padding-right: 2vw;
+    padding-left: 1vw;
 }
 
 a:hover{
-    color: cornflowerblue;
+    color: #cde144;
 }
 
-.center_footer{
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-}
-
-.git{
-    flex-grow: 2;
-}
-
-ul :nth-child(5) {
-    flex-grow: 3;
-}
 
 /*/////////////////
 ///  RESPONSIVE  //
