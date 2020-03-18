@@ -78,7 +78,7 @@ div li{
 }
 
 /*responsive*/
-@media screen and (max-width : 961px){
+@media screen and (max-width:961px){
     .blague h3 {
         color: tomato;  
     } 
