@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" typetext="css" href="jokeL.css">
     <link rel="stylesheet" typetext="css" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
     <title>Lexicum Ridiculum</title>
 </head>
@@ -14,14 +13,17 @@
         <nav class="nav">
             <ul>
                 <li>
-                    <img src="images/logoLexicum.jpg" class="logo"><a href="index.html" ></a>
-                </li>
+                 <img src="images/logoLexicum.jpg" class="logo"><a href="index.html" ></a>
+            </li>
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
                         <li><a href="#">Cours HTML et CSS</a></li>
                         <li><a href="#">Cours JavaScript</a></li>
                         <li><a href="#">Cours PHP et MySQL</a></li>
                         <li><a href="#">Cours Ruby</a></li>
+                        <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
+                        <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
+                         <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
                     </ul>
                 </li>
                 <li class="deroulant"><a href="#">Entrainement</a>
@@ -39,9 +41,11 @@
                         <li><a href="https://developer.mozilla.org/fr/docs/Apprendre/JavaScript" target="_blank">JS</a></li>
                         <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
                     </ul>
-                </li>
+                </li>                
                 <li class="deroulant" id="jokes"><a href="Joke.html" >Jokes</li></a>
                 <li class="deroulant" id="forum"><a href="Forum.html" >Forum</li></a>
+                <li class="deroulant" id="connect"><a href="login.html" >Connection</li></a>
+                <li class="deroulant" id="connect"><a href="login.html" >Inscription</li></a>
                 <li>
                     <label for="site-search"></label>
                     <input type="search" id="site-search" name="search" aria-label="Search through site content"
@@ -51,16 +55,16 @@
         </nav>
     </header>
     <main>
-        <section class="carambar">
+        <section class="carambar" id="carambar2">
             <div class="jokeLoic">Joke de Loic</div>
         </section>
         <section>
             <img src= "images/body.png" class=bodie>
         </section>
         <section class="blague">
-            <div class="dave">
+            <div class="dave" id="dave2">
                 <h3> Jokes de dév':</h3>
-                     <ul class="survol">
+                     <ul class="survol" id="survol2">
                         <li>
                             <p>"T'habites où Julien ?"</br>" Dans un HTLM !"</p>
                         </li>
@@ -81,17 +85,17 @@
                         </li>
                     </ul>
             </div>
-                <div class="data">
+                <div class="data" id="data2">
                     <h3> Jokes de data:</h3>
-                    <ul class="survol">
+                    <ul class="survol" id= "survol3">
                         <li>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
                         </li>
                     </ul>
                 </div>
-                <div class="perdu">
+                <div class="perdu" id = "data2">
                     <h3> Jokes perdues:</h3>
-                        <ul class="survol">
+                        <ul class="survol" id= "survol4">
                             <li>
                                 <p>"Dites moi..."</br>"moi!" </p>
                             </li>
@@ -122,5 +126,6 @@
             <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
         </ul>
     </footer>
+    <script type="text/javascript" src="joke.js"></script>
 </body>
 </html>
