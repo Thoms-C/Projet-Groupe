@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" typetext="css" href="style.css">
     <link rel="stylesheet" typetext="css" href="nav.css">
+    <link rel="stylesheet" typetext="css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
-    
+
     <title>Lexicum Ridiculum</title>
 </head>
+
 <body>
     <header>
         <nav class="nav">
             <ul class="menu_nav">
                 <li>
-                    <a href="index.html" ><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
+                    <a href="index.html"><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
                 </li>
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
@@ -34,28 +36,29 @@
                         <li><a href="#">Quizz</a></li>
                         <li><a href="#">Jeux</a></li>
                     </ul>
-                </li>            
-                <li class="deroulant" id="jokes"><a href="Joke.html" >Jokes</li></a>
-                <li class="deroulant" id="forum"><a href="forum.html" >Forum</li></a>
+                </li>
+                <li class="deroulant" id="jokes"><a href="Joke.html">Jokes</li></a>
+                <li class="deroulant" id="forum"><a href="forum.html">Forum</li></a>
                 <li class="search">
                     <label for="site-search"></label>
-                    <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Tapez votre recherche">
+                    <input type="search" id="site-search" name="search" aria-label="Search through site content"
+                        placeholder="Tapez votre recherche">
                 </li>
                 <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
             </ul>
-            </nav>
+        </nav>
+
         <!---Burger_nav-->
-            <div class="container">
-                <nav class="navbar">
-                    <div class="hamburger-menu">
-                        <div class="line line-1"></div>
-                        <div class="line line-2"></div>
-                        <div class="line line-3"></div>
-                    </div>
+        
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Cours complets</a>
-                        </li>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Entrainement</a>
@@ -67,11 +70,12 @@
                         <a href="#" class="nav-link">Forum</a>
                     </li>
                 </ul>
-                </nav>    
-            </div>
-         <!--End_Burger_nav-->
+            </nav>
+      
+        <!--End_Burger_nav-->
+        
         <!--POPUP-->
-        <div class="background" id="bg">  
+        <div class="background" id="bg">
             <section class="popup">
                 <section class="section_h2">
                     <div id="bg_h2_conn" class="h2_form">
@@ -81,26 +85,26 @@
                         <h2 class="inscription">Inscris toi :)</h2>
                     </div>
                 </section>
-                    <form method="post" id="inscription_form">
-                        <label for="name">Nom</label>
-                        <input type="text"  name="name"/>
-                        <label for="lastname">Prénom</label>
-                        <input type="email"  name="lastname"/>
-                        <label for="email">Email</label>
-                        <input type="text" name="email"/>
-                        <label for="password">Mot de passe</label>
-                        <input type="text" name="password"/>
-                        <input type="submit" name="nom" value="envoyer">
-                    </form>
-                    <form method="post" id="connexion_form">
-                        <label class="email">Email</label>
-                        <input type="text" name="name"/>
-                        <label >Mot de passe</label>
-                        <input type="email" name="email"/>
-                        <input type="submit" name="nom" value="envoyer">
-                    </form>
+                <form method="post" id="inscription_form">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" />
+                    <label for="lastname">Prénom</label>
+                    <input type="email" name="lastname" />
+                    <label for="email">Email</label>
+                    <input type="text" name="email" />
+                    <label for="password">Mot de passe</label>
+                    <input type="text" name="password" />
+                    <input type="submit" name="nom" value="envoyer">
+                </form>
+                <form method="post" id="connexion_form">
+                    <label class="email">Email</label>
+                    <input type="text" name="name" />
+                    <label>Mot de passe</label>
+                    <input type="email" name="email" />
+                    <input type="submit" name="nom" value="envoyer">
+                </form>
             </section>
-        </div>                
+        </div>
         <!--END POPUP-->
     </header>
     <main>
@@ -112,27 +116,32 @@
             <div class="conteneur">
                 <div class="ct1 slidedown">
                     <a href="https://www.grafikart.fr/formations/debuter-javascript" target="_blank">
-                    <span class="ct1text">Js c'est fantastique !</span>
+                        <span class="ct1text">Js c'est fantastique !</span>
                     </a>
                 </div>
                 <div class="ct2 slidedown">
                     <a href="Joke.html">
-                    <span class="ct2text">tu t'es égaré inconnu ? Viens ici et raconte nous ta meilleur blague de dév ! </span>
+                        <span class="ct2text">tu t'es égaré inconnu ? Viens ici et raconte nous ta meilleur blague de
+                            dév ! </span>
                     </a>
                 </div>
                 <div class="ct3 slidedown">
-                    <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">
-                    <span class="ct3text">Si tu veux apprendre les bases du développement web, c'est ici que tout commence !<br>Grâce à ces petits tutos tu vas devenir un vrai petit développeur en herbe !</span>
+                    <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"
+                        target="_blank">
+                        <span class="ct3text">Si tu veux apprendre les bases du développement web, c'est ici que tout
+                            commence !<br>Grâce à ces petits tutos tu vas devenir un vrai petit développeur en herbe
+                            !</span>
                     </a>
                 </div>
                 <div class="ct4 slidedown">
                     <a href="https://web.developpez.com/" target="_blank">
-                    <span class="ct4text">Tu n'es pas seul jeune vagabond, viens te ressourcer avec tes sembables en ce lieu</span>
+                        <span class="ct4text">Tu n'es pas seul jeune vagabond, viens te ressourcer avec tes sembables en
+                            ce lieu</span>
                     </a>
                 </div>
                 <div class="ct5 slidedown">
                     <a href="https://graphiste.com/blog/bonnes-pratiques-css-feuille-style" target="_blank">
-                    <span class="ct5text">Tuto du jour, quelque chose qui peut toujours t'être utile !</span>
+                        <span class="ct5text">Tuto du jour, quelque chose qui peut toujours t'être utile !</span>
                     </a>
                 </div>
             </div>
@@ -146,7 +155,8 @@
                     </a>
                 </article>
                 <article class="vids2 slide">
-                    <a href="https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript" target="_blank">
+                    <a href="https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript"
+                        target="_blank">
                         <span class="textvid2">Découvrez JavaScript !</span>
                     </a>
                 </article>
@@ -177,12 +187,14 @@
                     </a>
                 </article>
                 <article class="vids8 slide">
-                    <a href="https://www.jqwidgets.com/vue/?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYAiAAEgLfifD_BwE" target="_blank">
+                    <a href="https://www.jqwidgets.com/vue/?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYAiAAEgLfifD_BwE"
+                        target="_blank">
                         <span class="textvid8">Vue niveau intermédiaire</span>
                     </a>
                 </article>
                 <article class="vids9 slide">
-                    <a href="https://dyma.fr/vue?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYASAAEgKhAPD_BwE" target="_blank">
+                    <a href="https://dyma.fr/vue?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYASAAEgKhAPD_BwE"
+                        target="_blank">
                         <span class="textvid9">Découvrez Vue</span>
                     </a>
                 </article>
@@ -207,12 +219,18 @@
     <footer>
         <section>
             <ul class="flex">
-                <div>         
-                    <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa">&#xf230;</li></a>
-                    <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf081;</li></a> 
-                    <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
+                <div>
+                    <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer">
+                        <li style="font-size:24px" class="fa">&#xf230;</li>
+                    </a>
+                    <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer">
+                        <li style="font-size:24px" class="fa li_footer">&#xf081;</li>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="a_footer">
+                        <li class="fa fa-github" style="font-size:36px"></li>
+                    </a>
                     <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
-                </div>  
+                </div>
                 <li class="logo_footer a_footer" href="index.html"><img src="images/lexique-5.png" alt="logo"></li>
                 <div>
                     <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
@@ -220,10 +238,11 @@
                     <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
                 </div>
             </ul>
-        </section>            
+        </section>
 
     </footer>
     <script type="text/javascript" src="form.js"></script>
     <script type="text/javascript" src="nav.js"></script>
 </body>
+
 </html>
