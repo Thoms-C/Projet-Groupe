@@ -12,8 +12,10 @@
 <body>
     <header>
         <nav class="nav">
-            <ul>
-               
+            <ul class="menu_nav">
+                <li>
+                    <a href="index.html" ><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
+                </li>
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
                         <li><a href="#">Cours HTML et CSS</a></li>
@@ -37,12 +39,11 @@
                     <label for="site-search"></label>
                     <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Tapez votre recherche">
                 </li>
-                <li class="deroulant" id="connect"><a href="login.html" >Se connecter</li></a>
-                <li class="deroulant" id="inscript"><a href="login.html" >S'inscrire</li></a>
+                <li class="deroulant" id="connect"><a href="login.html" >Se connecter / S'inscrire</li></a>
             </ul>
         </nav>
     </header>
-    <main id " Main">
+    <main>
         <section class="carambar" id="carambar2">
             <div class="jokeLoic">Joke de Loic</div>
         </section>
@@ -96,20 +97,21 @@
     </main>
     <footer>
         <section>
-            <ul class="flex">         
-                <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa">&#xf230;</li></a>
-                <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf081;</li></a> 
-                <a href="https://github.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf09b;</li></a>
-                <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>  
-                <li class="logo_footer a_footer" href=""><img src="images/logoLexicum.jpg" alt="logo"></li>
+            <ul class="flex">
+                <div>         
+                    <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa">&#xf230;</li></a>
+                    <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf081;</li></a> 
+                    <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
+                    <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
+                </div>  
+                <li class="logo_footer a_footer" href="index.html"><img src="images/lexique-5.png" alt="logo"></li>
+                <div>
+                    <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
+                </div>
             </ul>
         </section>            
-        <ul class="flex center_footer">
-            <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
-            <li class="li_footer"><a href="#Contact" class="a_footer">Contact</a></li>
-            <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
-            <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
-        </ul>
     </footer>
     <script type="text/javascript" src="joke.js"></script>
 </body>
