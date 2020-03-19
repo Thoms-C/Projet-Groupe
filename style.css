@@ -10,6 +10,7 @@
 h2 {
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 li{
     list-style-type: none; 
@@ -122,7 +123,7 @@ header nav a:hover {
 }
 
 #connect:hover{
-    background-color: blue;
+    background-color: white;
     transition: 0.3s ease;
 }
 
@@ -139,12 +140,20 @@ header nav #connect a:hover {
     color: #416777;
 }
 #inscript:hover {
-    background-color: blue;
+    background-color: white;
     transition: 0.3s ease;
 }
 
 header nav #inscript a:hover {
     border-bottom: none;
+}
+
+.logoH {
+    width: 40px;
+    padding: 0px;
+}
+.lgo {
+    padding: 0px;
 }
 
 
@@ -162,6 +171,7 @@ header nav #inscript a:hover {
     background-size: cover;
     height: 300px;
     margin-top: 20px ;
+    margin-bottom: 50px;
 }
 
 /*///////////////// 
@@ -174,8 +184,8 @@ header nav #inscript a:hover {
     row-gap: 5px;
     column-gap: 10px;
     height: 400px;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid lightgray;
 }
 
 .conteneur > div {
@@ -218,9 +228,11 @@ header nav #inscript a:hover {
 }
 
 .ct1 span {
-    display: block;
+    display: flex;
     position: absolute;
     transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .ct2 {
@@ -260,9 +272,11 @@ header nav #inscript a:hover {
 }
 
 .ct2 span {
-    display: block;
+    display: flex;
     position: absolute;
     transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .ct3 {
@@ -278,7 +292,7 @@ header nav #inscript a:hover {
 }
 
 .ct3:hover .ct3text {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .ct3 .ct3text {
@@ -303,9 +317,11 @@ header nav #inscript a:hover {
 }
 
 .ct3 span {
-    display: block;
+    display: flex;
     position: absolute;
     transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .ct4 {
@@ -344,9 +360,11 @@ header nav #inscript a:hover {
 }
 
 .ct4 span {
-    display: block;
+    display: flex;
     position: absolute;
     transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .ct5 {
@@ -386,9 +404,11 @@ header nav #inscript a:hover {
 }
 
 .ct5 span {
-    display: block;
+    display: flex;
     position: absolute;
     transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 /*///////////////// 
@@ -403,6 +423,7 @@ header nav #inscript a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     margin: 0 20px 20px 20px;
+    margin-bottom: 75px;
 }
 
 .vidstuto article {
@@ -436,9 +457,11 @@ header nav #inscript a:hover {
 }
 
 .vids1 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids1 .slide .textvid1 {
@@ -473,9 +496,11 @@ header nav #inscript a:hover {
 }
 
 .vids2 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids2 .slide .textvid2 {
@@ -509,9 +534,11 @@ header nav #inscript a:hover {
 }
 
 .vids3 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids3 .slide .textvid3 {
@@ -545,9 +572,11 @@ header nav #inscript a:hover {
 }
 
 .vids4 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids4 .slide .textvid4 {
@@ -581,9 +610,11 @@ header nav #inscript a:hover {
 }
 
 .vids5 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids5 .slide .textvid5 {
@@ -617,9 +648,11 @@ header nav #inscript a:hover {
 }
 
 .vids6 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids6 .slide .textvid6 {
@@ -653,9 +686,11 @@ header nav #inscript a:hover {
 }
 
 .vids7 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids7 .slide .textvid7 {
@@ -689,9 +724,11 @@ header nav #inscript a:hover {
 }
 
 .vids8 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids8 .slide .textvid8 {
@@ -725,9 +762,11 @@ header nav #inscript a:hover {
 }
 
 .vids9 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids9 .slide .textvid9 {
@@ -761,9 +800,11 @@ header nav #inscript a:hover {
 }
 
 .vids10 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids10 .slide .textvid10 {
@@ -797,9 +838,11 @@ header nav #inscript a:hover {
 }
 
 .vids11 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids11 .slide .textvid11 {
@@ -833,9 +876,11 @@ header nav #inscript a:hover {
 }
 
 .vids12 span {
-    display: block;
+    display: flex;
     position: absolute;
-    transform: 200ms ease;
+    transition: 200ms ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .vids12 .slide .textvid12 {
@@ -848,9 +893,14 @@ header nav #inscript a:hover {
 ///    FOOTER    //
 /////////////////*/
 
+footer {
+    border-top: 2px solid gray;
+    height: 100%;
+}
+
 footer section ul{
     background-color: #cbc7c8;
-    margin-top: 2rem;
+    padding-top: 2rem;
     height: 8vw;
     position: relative;
     padding: 0;
@@ -865,6 +915,7 @@ footer section ul{
 .logo_footer img{
     width: auto;
     height: 5vw;
+    padding-right: 60px;
 }
 
 .a_footer{
