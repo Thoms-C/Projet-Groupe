@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" typetext="css" href="jokeL.css">
     <link rel="stylesheet" typetext="css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
     <title>Lexicum Ridiculum</title>
 </head>
@@ -12,9 +13,7 @@
     <header>
         <nav class="nav">
             <ul>
-                <li>
-                    <a href="index.html" class="lgo"><img src="images/logoLexicum.jpg" alt="logo" class="logoH"></a>
-                </li>
+               
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
                         <li><a href="#">Cours HTML et CSS</a></li>
@@ -43,55 +42,52 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id " Main">
         <section class="carambar" id="carambar2">
             <div class="jokeLoic">Joke de Loic</div>
         </section>
         <section>
             <img src= "images/body.png" class=bodie>
         </section>
-        <section class="blague">
-            <div class="dave" id="dave2">
-                <h3> Jokes de dév':</h3>
-                     <ul class="survol" id="survol2">
-                        <li>
-                            <p>"T'habites où Julien ?"</br>" Dans un HTLM !"</p>
-                        </li>
-                        <li>
-                            <p>"Tu me prêtes 500€?"</br>"Biensur quand les PULL auront des dents!"</p>
-                        </li>
-                        <li>
-                            <p>"Tu veux un croissant?"</br>"Non merci, j'ai déjà pris mon ch'ti dév."</p>
-                        </li>
-                        <li>
-                            <p>"Oups, j'ai mergé!"</p>
-                        </li>
-                        <li>
-                            <p>"Si JAVA bien, c'est Juvamine!"</p>
-                        </li>
-                        <li>
-                            <p>"J'ai pas réussi à le faire mais promis.. JS ayé"</p>
-                        </li>
-                    </ul>
+        <section class="blague" id= "blague2">
+            <ul class = "H3">
+                <li> Jokes de dév':</li>
+                <li> Jokes de data:</li>
+                <li> Jokes perdues:</li>
+            </ul>
+            <div>
+                <div class="dave" id="dave2"></div>
+                <div class="data" id="data2"></div> 
+                <div class="perdu" id = "perdu2"></div>
             </div>
-                <div class="data" id="data2">
-                    <h3> Jokes de data:</h3>
-                    <ul class="survol" id= "survol3">
-                        <li>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="perdu" id = "perdu2">
-                    <h3> Jokes perdues:</h3>
-                        <ul class="survol" id= "survol4">
-                            <li>
-                                <p>"Dites moi..."</br>"moi!" </p>
-                            </li>
-                            <li>
-                                <p>"on se serre les coudes les gars! sauf ceux qui éternue dedans" </p>
-                            </li>
-                        </ul>
+        </section>
+        <section class = "pop">
+            <div class="survol" id="survol2">
+             
+                    <p>"T'habites où Julien ?"</br>" Dans un HTLM !"</p>
+                
+                    <p>"Tu me prêtes 500€?"</br>"Biensur quand les PULL auront des dents!"</p>
+                
+                    <p>"Tu veux un croissant?"</br>"Non merci, j'ai déjà pris mon ch'ti dév."</p>
+                
+                    <p>"Oups, j'ai mergé!"</p>
+               
+                    <p>"Si JAVA bien, c'est Juvamine!"</p>
+                
+                    <p>"J'ai pas réussi à le faire mais promis.. JS ayé"</p>
+                    <input type="button" id="bouton" class= "bouton" value= "Quit">
+            </div>
+            <div class="survol" id= "survol3">
+               
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                    <input type="button" id="bouton2" class= "bouton" value= "Quit">
+            </div>
+                <div class="survol" id= "survol4">
+                    
+                        <p>"Dites moi..."</br>"moi!" </p>
+                    
+                        <p>"on se serre les coudes les gars! sauf ceux qui éternue dedans" </p>
+                        <input type="button" id="bouton3" class= "bouton"S value= "Quit">
                 </div>
         </section> 
         <section>
