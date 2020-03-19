@@ -1,7 +1,7 @@
 /*COULEURS  color: var(--primary_color);*/
 :root{
-    --primary_color: orange;
-    --secondary_color: blue;
+    --logo_color: #008cff;
+    --grey_color: #cbc7c8;
 }
 
 /*BODY*/
@@ -28,8 +28,8 @@ body{
 .popup{
   width: 30rem;
   height: 40rem;
-  border: 2px solid orange;
-  background-color: black;
+  border: 2px solid var(--logo_color);
+  background-color: var(--grey_color);
   opacity: 1;
   position: fixed;
   text-align: center; 
@@ -41,7 +41,7 @@ body{
 /*HEADER OF POPUP*/
 .popup h2, label{
     font-family: 'Baloo Chettan 2', cursive;
-    color: orange;
+    color: var(--logo_color);
 }
 
 .popup .section_h2{
@@ -56,13 +56,13 @@ body{
 
 #bg_h2_conn{
     border-radius: 7px 0 0 0;
-    background-color: black;
+    background-color: var(--grey_color);
     cursor: auto;
 }
 
 #bg_h2_inscrp{
     border-radius: 0 7px 0 0;
-    background-color: wheat;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -101,15 +101,15 @@ body{
     width: 80%;
     margin-bottom:5px;
     border-radius: 10px;
-    border: orange solid 1px;
+    border: var(--logo_color) solid 1px;
     box-shadow: none;
     padding: 1rem;
     margin: 1rem 0rem;
 }
 
 .popup input[type=submit]{
-    background-color: orange;
-    border: 1px solid orange;
+    background-color: var(--logo_color);
+    border: 1px solid var(--logo_color);
     color: white;
     font-family: 'Baloo Chettan 2', cursive;
     font-size: 20px;
@@ -119,8 +119,8 @@ body{
 
 .popup input[type=submit]:hover{
     background-color: white;
-    border: 1px solid orange;
-    color: orange;
+    border: 1px solid var(--logo_color);
+    color: var(--logo_color);
 }
 
 .popup form p{
@@ -128,6 +128,6 @@ body{
 }
 
 .popup form p a{
-    color: orange;
+    color: var(--logo_color);
     text-decoration: none;
 }
