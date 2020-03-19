@@ -1,6 +1,8 @@
-/*///////////////// 
-///    POPUP     // 
-////////////////*/
+/*COULEURS  color: var(--primary_color);*/
+:root{
+    --primary_color: orange;
+    --secondary_color: blue;
+}
 
 /*BODY*/
 body{
@@ -14,7 +16,6 @@ body{
     /*filter: blur(4px);*/
     background-color: rgba(0, 0, 0, 0.7);
     top: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -37,6 +38,41 @@ body{
 
 /*FORM*/
 
+/*HEADER OF POPUP*/
+.popup h2, label{
+    font-family: 'Baloo Chettan 2', cursive;
+    color: orange;
+}
+
+.popup .section_h2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.popup .h2_form{
+    width: 50%;
+}
+
+#bg_h2_conn{
+    border-radius: 7px 0 0 0;
+    background-color: black;
+    cursor: auto;
+}
+
+#bg_h2_inscrp{
+    border-radius: 0 7px 0 0;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.popup h2{
+    font-size: 30px;
+}
+/***************************/
+
+
+/*BODY OF POPUP*/
 .popup form{
     min-height: calc(644px - 99px);
     display: flex;
@@ -44,13 +80,17 @@ body{
     align-items: center;
 }
 
-.popup .h2, label{
-    font-family: 'Baloo Chettan 2', cursive;
-    color: orange;
+#inscription_form{
+    display: none;
 }
 
-.popup .h2{
-    font-size: 30px;
+#inscription_form label:nth-child(1){
+    padding-top: 10px;
+}
+
+#connexion_form .email{
+    margin-top: 5rem;
+    display: flex;
 }
 
 .popup label{
