@@ -1,11 +1,10 @@
-.container{
+.navbar{
         display: none;
 }
 
 @media screen and (max-width: 800px) {
 
-        .container{
-                display: block;
+
         }
         
         .nav {
