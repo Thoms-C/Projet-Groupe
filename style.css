@@ -26,31 +26,49 @@ main{
 ////////////////*/
 
 header nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
     background-color: #cbc7c8;
-    height: 5vw;
+    padding: 10px 0 10px 0;
+    opacity: 0.8;
 }
-.menu_nav {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+
+header ul  {
     padding: 0;
-    height: 5vw;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    float: left;
+    width: 14%;
+    text-align: center;
+    position: relative;
 }
 
 header nav ul::after {
+    content: "";
     display: table;
     clear: both;
 }
 
 header nav a {
+    display: block;
     text-decoration: none;
     color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
 }
 
-/*header nav a:hover {
+header nav a:hover {
     color: orange;
     border-bottom: 2px solid gold;
-}*/
+}
 
 .sous {
     box-shadow: 0px 1px 2px black;
@@ -60,23 +78,37 @@ header nav a {
 
 .nav > ul li:hover .sous{
     display: block;
-    width: 175px;
 }
 
 .sous li {
     float: none;
     text-align: left;
-    border-bottom: none;
-    padding: 5px;
 }
-.sous {
-    padding-inline-start: 0;
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
 }
 
 .sous a:hover {
     border-bottom: none;
     background-color: rgba(200, 200, 200, 0.1);
 }
+
+#jokes {
+    color: white;
+}
+
+#forum {
+    color: white;
+}
+
+#site-search {
+    color: #1995AD;
+    margin-top: 10px;
+    display: none;
+}
+
 #connect {
     font-size: 20px;
     color: #416777;
