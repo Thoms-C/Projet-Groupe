@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" typetext="css" href="style.css">
+    <link rel="stylesheet" typetext="css" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
     
     <title>Lexicum Ridiculum</title>
@@ -36,15 +37,41 @@
                 </li>            
                 <li class="deroulant" id="jokes"><a href="Joke.html" >Jokes</li></a>
                 <li class="deroulant" id="forum"><a href="forum.html" >Forum</li></a>
-                    <li>
+                <li class="search">
                     <label for="site-search"></label>
                     <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Tapez votre recherche">
                 </li>
-                <li class="deroulant" id="connect"><a href="login.html" >Se connecter / S'inscrire</li></a>
+                <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
             </ul>
-        </nav>
+            </nav>
+        <!---Burger_nav-->
+            <div class="container">
+                <nav class="navbar">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cours complets</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Entrainement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Joke</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Forum</a>
+                    </li>
+                </ul>
+                </nav>    
+            </div>
+         <!--End_Burger_nav-->
         <!--POPUP-->
-        <div class="background">  
+        <div class="background" id="bg">  
             <section class="popup">
                 <section class="section_h2">
                     <div id="bg_h2_conn" class="h2_form">
@@ -72,9 +99,9 @@
                         <input type="email" name="email"/>
                         <input type="submit" name="nom" value="envoyer">
                     </form>
-            </section>            
+            </section>
+        </div>                
         <!--END POPUP-->
- 
     </header>
     <main>
         <section>
@@ -197,5 +224,6 @@
 
     </footer>
     <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>

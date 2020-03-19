@@ -81,10 +81,11 @@ header nav a:hover {
 }
 #connect {
     font-size: 20px;
-    color: #416777;
+    color: #008cff;
     border: 2px solid white;
     border-radius: 10px;
     height: 50px;
+    cursor: pointer;
 }
 
 #connect:hover{
@@ -916,7 +917,9 @@ a:hover{
         grid-template-columns: 1fr 1fr;
         height: 175vh;
     }
-    header nav ul li ul a {
+    /*NAV*/
+
+    header nav ul li.ul.a {
         display: none;
         justify-content: center;
         align-items: center;
@@ -925,19 +928,20 @@ a:hover{
         width: 14%;
     }
     #site-search {
-        display: block;
-        margin-left: 45vw;
-        padding-right: 200px;
+        align-content: flex-end;
+       
+       
     }
     .deroulant {
         display: none;
     }
     #connect {
-        display: block;
+        display: none;
     }
-    #inscript {
-        display: block;
+    .menu_nav{
+        justify-content: center;
     }
+
 }
 
 

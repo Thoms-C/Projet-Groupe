@@ -28,52 +28,62 @@ main{
     margin-top: 20px;
 }
 
-/*mise en page  titre des blagues*/
+/*///mise en page  titre des blagues///*/
 .H3{
     font-size: 30px;
     display: flex; 
-    flex-direction: column;    
+    flex-direction: column;   
+    padding: 0; 
 }
 .H3 li{
     margin: 80px 0px;
 }
 
-/*mise en page des sections de blagues*/
-div li{
-    padding-bottom: 3px;
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-}
-/* fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus*/
+/* ///fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus///*/
 .survol{
-    display: none;
-    width: 350px;
-    text-align: center;
+    width: 50%;
+    height: 70%;
+    background-color:#ffff01;
+    border: 10px  outset #ff0198;
+    position: absolute;
+    top: 0;
+    justify-content: center;
     flex-direction: column;
-    padding-left: 0px;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+.bouton{
+    color: black;
+    font-size: large;
+    width: 5vw;
+    background:#ff0198;
+    margin-bottom: 5px;
+    
+}
+.pop p{
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+    font-size:150%;
 }
 .pop{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .blague{
-    position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
     height: 700px;
   
 }
-/*fait apparaitre les images*/
+
 .blague div{
-    height: 200px;
-    width: 200px;   
+    height: 30vh;
+    width: 15vw;   
 }
-/* dimensionne les images dave, data et perdue*/
+/*/// dimensionne les images dave, data et perdue///*/
 .dave{
-    
     background-image: url(images/dave.jpg);
     background-size: cover;
     background-position: center;
@@ -108,15 +118,31 @@ div li{
 
 /*//////RESPONSIVE/////*/
 @media screen and (max-width:800px){
-    .blague{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .blague div{
-        height: 200px;
-        width: 200px;
-        margin: 25px 25px;
-    }
+.blague div{
+    width: 20vw;
+    height: 15vh;
+}
+.H3 li{
+    margin:70px 0 ;
+}
+.blague{
+    height: calc(950- 123);
+    
+}
+
+.data{
+    margin-top: 50px;
+}
+.perdu{
+    margin-top: 50px;
+}
+.survol{
+    width: auto;
+    height: auto;
+}
+.bouton{
+    width: auto;
+}
+
 }
 
