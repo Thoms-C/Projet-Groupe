@@ -26,41 +26,31 @@ main{
 ////////////////*/
 
 header nav {
-    margin: 0 auto;
-    background-color: white;
-    position: sticky;
-    top: 0px;
     background-color: #cbc7c8;
-    padding: 10px 0 10px 0;
+    height: 5vw;
 }
-
-.nav ul {
-    display: flex;
+.menu_nav {
+    display:flex;
     justify-content: space-around;
     align-items: center;
     padding: 0;
+    height: 5vw;
 }
 
-header ul  {
-    padding: 0;
-}
-
-header nav ul {
-    list-style-type: none;
+header nav ul::after {
+    display: table;
+    clear: both;
 }
 
 header nav a {
-    display: block;
     text-decoration: none;
     color: white;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
 }
 
-header nav a:hover {
+/*header nav a:hover {
     color: orange;
     border-bottom: 2px solid gold;
-}
+}*/
 
 .sous {
     box-shadow: 0px 1px 2px black;
@@ -70,26 +60,23 @@ header nav a:hover {
 
 .nav > ul li:hover .sous{
     display: block;
+    width: 175px;
+}
+
+.sous li {
+    float: none;
+    text-align: left;
+    border-bottom: none;
+    padding: 5px;
+}
+.sous {
+    padding-inline-start: 0;
 }
 
 .sous a:hover {
     border-bottom: none;
     background-color: rgba(200, 200, 200, 0.1);
 }
-
-#jokes {
-    color: white;
-}
-
-#forum {
-    color: white;
-}
-
-#site-search {
-    color: #1995AD;
-    margin-top: 10px;
-}
-
 #connect {
     font-size: 20px;
     color: #416777;

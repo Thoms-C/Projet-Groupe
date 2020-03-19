@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="nav">
-            <ul>
+            <ul class="menu_nav">
                 <li>
                     <a href="index.html" ><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
                 </li>
@@ -46,33 +46,35 @@
         <!--POPUP-->
         <div class="background">  
             <section class="popup">
-                <h2 class="h2">Inscris toi :)</h2>   
-                <form method="post" >
-                    <label for="name">Nom</label>
-                    <input type="text"  name="name"/>
-                    <label for="lastname">Prénom</label>
-                    <input type="email"  name="lastname"/>
-                    <label for="email">Email</label>
-                    <input type="text" name="email"/>
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password"/>
-                    <input type="submit" name="nom" value="envoyer">
-                    <p>Déjà inscrit ? <a href="">Connecte toi !</a></p>
-                </form>
+                <section class="section_h2">
+                    <div id="bg_h2_conn" class="h2_form">
+                        <h2 class="connexion">Connecte toi :)</h2>
+                    </div>
+                    <div id="bg_h2_inscrp" class="h2_form">
+                        <h2 class="inscription">Inscris toi :)</h2>
+                    </div>
+                </section>
+                    <form method="post" id="inscription_form">
+                        <label for="name">Nom</label>
+                        <input type="text"  name="name"/>
+                        <label for="lastname">Prénom</label>
+                        <input type="email"  name="lastname"/>
+                        <label for="email">Email</label>
+                        <input type="text" name="email"/>
+                        <label for="password">Mot de passe</label>
+                        <input type="text" name="password"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
+                    <form method="post" id="connexion_form">
+                        <label class="email">Email</label>
+                        <input type="text" name="name"/>
+                        <label >Mot de passe</label>
+                        <input type="email" name="email"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
             </section>            
-        </div>  
-                 <!--  <section class="connexion">
-                        <h2 class="h2">Connecte toi :)</h2>
-                        <form method="post">
-                            <label >Email</label>
-                            <input type="text" name="name"/>
-                            <label >Mot de passe</label>
-                            <input type="email" name="email"/>
-                            <input type="submit" name="nom" value="envoyer">
-                        </form>
-                    </section> -->
-                </section>  
-            </div>
+        <!--END POPUP-->
+ 
     </header>
     <main>
         <section>
@@ -184,11 +186,9 @@
                     <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
                     <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
                 </div>  
-                <li class="logo_footer a_footer" href=""><img src="images/logoLexicum.jpg" alt="logo"></li>
+                <li class="logo_footer a_footer" href="index.html"><img src="images/logoLexicum.jpg" alt="logo"></li>
                 <div>
                     <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
-                    <!--<li class="li_footer"><a href="#Contact" class="a_footer">Contact</a></li>-->
-                    <!--<li class="li_footer"><a href="#Contact" class="a_footer">Contact</a></li>-->
                     <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
                     <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
                 </div>
