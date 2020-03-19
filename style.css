@@ -144,6 +144,7 @@ header nav a:hover {
     line-height: 0;
 }
 
+
 .ct1:hover .ct1text {
     opacity: 0.8;
 }
@@ -941,6 +942,7 @@ a:hover{
     .menu_nav{
         justify-content: center;
     }
+   
 
 }
 
