@@ -13,7 +13,10 @@
 <body>
     <header>
         <nav class="nav">
-            <ul>
+            <ul class="menu_nav">
+                <li>
+                    <a href="index.html" ><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
+                </li>
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
                         <li><a href="#">Cours HTML et CSS</a></li>
@@ -30,64 +33,54 @@
                         <li><a href="#">Quizz</a></li>
                         <li><a href="#">Jeux</a></li>
                     </ul>
-                </li>
-                <li class="deroulant"><a href="#">Tutos</a>
-                    <ul class="sous">
-                        <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
-                        <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
-                        <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
-                        <li><a href="https://www.w3schools.com/Css/" target="_blank">CSS</a></li>
-                        <li><a href="https://developer.mozilla.org/fr/docs/Apprendre/JavaScript" target="_blank">JS</a></li>
-                        <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
-                    </ul>
-                </li>                
+                </li>            
                 <li class="deroulant" id="jokes"><a href="Joke.html" >Jokes</li></a>
                 <li class="deroulant" id="forum"><a href="Forum.html" >Forum</li></a>
                     <li>
                     <label for="site-search"></label>
                     <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Tapez votre recherche">
                 </li>
-                <li class="deroulant" id="connect"><a href="login.html" >Se connecter</li></a>
-                <li class="deroulant" id="inscript"><a href="login.html" >S'inscrire</li></a>
+                <li class="deroulant" id="connect"><a href="login.html" >Se connecter / S'inscrire</li></a>
             </ul>
         </nav>
         <!--POPUP-->
-        <a id="button" href="#">se connecter</a>
         <div class="background">  
             <section class="popup">
-                <h2 class="h2">Inscris toi :)</h2>   
-                <form method="post" >
-                    <label for="name">Nom</label>
-                    <input type="text"  name="name"/>
-                    <label for="lastname">Prénom</label>
-                    <input type="email"  name="lastname"/>
-                    <label for="email">Email</label>
-                    <input type="text" name="email"/>
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password"/>
-                    <input type="submit" name="nom" value="envoyer">
-                    <p>Déjà inscrit ? <a href="">Connecte toi !</a></p>
-                </form>
+                <section class="section_h2">
+                    <div id="bg_h2_conn" class="h2_form">
+                        <h2 class="connexion">Connecte toi :)</h2>
+                    </div>
+                    <div id="bg_h2_inscrp" class="h2_form">
+                        <h2 class="inscription">Inscris toi :)</h2>
+                    </div>
+                </section>
+                    <form method="post" id="inscription_form">
+                        <label for="name">Nom</label>
+                        <input type="text"  name="name"/>
+                        <label for="lastname">Prénom</label>
+                        <input type="email"  name="lastname"/>
+                        <label for="email">Email</label>
+                        <input type="text" name="email"/>
+                        <label for="password">Mot de passe</label>
+                        <input type="text" name="password"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
+                    <form method="post" id="connexion_form">
+                        <label class="email">Email</label>
+                        <input type="text" name="name"/>
+                        <label >Mot de passe</label>
+                        <input type="email" name="email"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
             </section>            
-        </div>  
-            
-                 <!--  <section class="connexion">
-                        <h2 class="h2">Connecte toi :)</h2>
-                        <form method="post">
-                            <label >Email</label>
-                            <input type="text" name="name"/>
-                            <label >Mot de passe</label>
-                            <input type="email" name="email"/>
-                            <input type="submit" name="nom" value="envoyer">
-                        </form>
-                    </section> -->
-                </section>  
-            </div>
+        <!--END POPUP-->
+ 
     </header>
     <main>
         <section>
             <div class="carousel"></div>
         </section>
+        <h2>Tech News</h2>
         <section>
             <div class="conteneur">
                 <div class="ct1 slidedown">
@@ -186,21 +179,22 @@
     </main>
     <footer>
         <section>
-            <ul class="flex">         
-                <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa">&#xf230;</li></a>
-                <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf081;</li></a> 
-                <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
-                <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>  
-                <li class="logo_footer a_footer" href=""><img src="images/logoLexicum.jpg" alt="logo"></li>
+            <ul class="flex">
+                <div>         
+                    <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer"><li style="font-size:24px" class="fa">&#xf230;</li></a>
+                    <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer"><li style="font-size:24px" class="fa li_footer">&#xf081;</li></a> 
+                    <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
+                    <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
+                </div>  
+                <li class="logo_footer a_footer" href="index.html"><img src="images/logoLexicum.jpg" alt="logo"></li>
+                <div>
+                    <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
+                </div>
             </ul>
         </section>            
-        <ul class="flex center_footer">
-            <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
-            <!--<li class="li_footer"><a href="#Contact" class="a_footer">Contact</a></li>-->
-            <!--<li class="li_footer"><a href="#Contact" class="a_footer">Contact</a></li>-->
-            <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
-            <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
-        </ul>
+
     </footer>
     <script type="text/javascript" src="form.js"></script>
 </body>
