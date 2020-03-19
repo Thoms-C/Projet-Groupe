@@ -32,7 +32,8 @@ main{
 .H3{
     font-size: 30px;
     display: flex; 
-    flex-direction: column;    
+    flex-direction: column;   
+    padding: 0; 
 }
 .H3 li{
     margin: 80px 0px;
@@ -40,20 +41,18 @@ main{
 
 /* ///fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus///*/
 .survol{
-    display: none;
-    position: absolute;
-    width: 25vw;
-    text-align: center;
-    flex-direction: column;
-    padding-left: 0px;
-    color: black;
-    border-radius: 20px;
+    width: 50%;
+    height: 70%;
     background-color:#ffff01;
     border: 10px  outset #ff0198;
+    position: absolute;
+    top: 0;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    position: fixed;
+    display: none;
     z-index: 1;
-    
 }
 .bouton{
     color: black;
@@ -80,8 +79,8 @@ main{
 }
 
 .blague div{
-    height: 200px;
-    width: 200px;   
+    height: 30vh;
+    width: 15vw;   
 }
 /*/// dimensionne les images dave, data et perdue///*/
 .dave{
@@ -119,6 +118,31 @@ main{
 
 /*//////RESPONSIVE/////*/
 @media screen and (max-width:800px){
-.dave{}
+.blague div{
+    width: 20vw;
+    height: 15vh;
+}
+.H3 li{
+    margin:70px 0 ;
+}
+.blague{
+    height: calc(950- 123);
+    
+}
+
+.data{
+    margin-top: 50px;
+}
+.perdu{
+    margin-top: 50px;
+}
+.survol{
+    width: auto;
+    height: auto;
+}
+.bouton{
+    width: auto;
+}
+
 }
 
