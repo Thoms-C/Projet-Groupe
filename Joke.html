@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" typetext="css" href="jokeL.css">
     <link rel="stylesheet" typetext="css" href="style.css">
+    <link rel="stylesheet" typetext="css" href="form.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
     <title>Lexicum Ridiculum</title>
@@ -39,9 +41,41 @@
                     <label for="site-search"></label>
                     <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Tapez votre recherche">
                 </li>
-                <li class="deroulant" id="connect"><a href="login.html" >Se connecter / S'inscrire</li></a>
+                <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
             </ul>
         </nav>
+        <!--POPUP-->
+        <div class="background" id="bg">  
+            <section class="popup">
+                <section class="section_h2">
+                    <div id="bg_h2_conn" class="h2_form">
+                        <h2 class="connexion">Connecte toi :)</h2>
+                    </div>
+                    <div id="bg_h2_inscrp" class="h2_form">
+                        <h2 class="inscription">Inscris toi :)</h2>
+                    </div>
+                </section>
+                    <form method="post" id="inscription_form">
+                        <label for="name">Nom</label>
+                        <input type="text"  name="name"/>
+                        <label for="lastname">Prénom</label>
+                        <input type="email"  name="lastname"/>
+                        <label for="email">Email</label>
+                        <input type="text" name="email"/>
+                        <label for="password">Mot de passe</label>
+                        <input type="text" name="password"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
+                    <form method="post" id="connexion_form">
+                        <label class="email">Email</label>
+                        <input type="text" name="name"/>
+                        <label >Mot de passe</label>
+                        <input type="email" name="email"/>
+                        <input type="submit" name="nom" value="envoyer">
+                    </form>
+            </section>
+        </div>                
+        <!--END POPUP-->
     </header>
     <main>
         <section class="carambar" id="carambar2">
@@ -104,15 +138,18 @@
                     <a href="https://github.com/" target="_blank" class="a_footer"><li class="fa fa-github" style="font-size:36px"></li></a>
                     <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
                 </div>  
-                <li class="logo_footer a_footer" href="index.html"><img src="images/lexique-5.png" alt="logo"></li>
+                <a href="index.html" ><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
                 <div>
-                    <li class="li_footer"><a href="" class="a_footer">Forum</a></li>
+                    <li class="li_footer"><a href="forum.html" class="a_footer">Forum</a></li>
                     <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
                     <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
                 </div>
             </ul>
         </section>            
+
     </footer>
+    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
     <script type="text/javascript" src="joke.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 const menuIcon= document.querySelector('.hamburger-menu');
-
 const navbar=document.querySelector('.navbar');
 
 
