@@ -61,19 +61,18 @@ header nav a {
     display: block;
     text-decoration: none;
     color: white;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+    transition: 0.3s ease;
 }
 
 header nav a:hover {
-    color: orange;
-    border-bottom: 2px solid gold;
+    color: #008cff;
 }
 
 .sous {
     box-shadow: 0px 1px 2px black;
     background-color: #cbc7c8;
     position: absolute;
+    display: none;
 }
 
 .nav > ul li:hover .sous{
@@ -93,6 +92,7 @@ header nav a:hover {
 .sous a:hover {
     border-bottom: none;
     background-color: rgba(200, 200, 200, 0.1);
+    transition: 0.3s ease;
 }
 
 #jokes {
@@ -122,33 +122,9 @@ header nav a:hover {
     transition: 0.3s ease;
 }
 
-header nav #connect a:hover {
-    border-bottom: none;
-}
-
-#inscript {
-    border: 2px solid white;
-    border-radius: 10px;
-    height: 50px;
-    font-size: 20px;
-    color: #416777;
-}
-#inscript:hover {
-    background-color: white;
-    transition: 0.3s ease;
-}
-
-header nav #inscript a:hover {
-    border-bottom: none;
-}
-
 .logoH {
     width: 70px;
-    padding: 0px;
-}
-.lgo {
-    padding: 0px;
-    width: 40px;
+    margin: 15px 0 10px 0;
 }
 
 
