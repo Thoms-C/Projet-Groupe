@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" typetext="css" href="style.css">
+    <link rel="stylesheet" typetext="css" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
     
     <title>Lexicum Ridiculum</title>
@@ -42,7 +43,43 @@
                 </li>
                 <li class="deroulant" id="connect"><a href="#" >Se connecter</li></a>
             </ul>
-        </nav>
+            </nav>
+        <!---Burger_nav-->
+            <div class="container">
+                <nav class="navbar">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cours complets</a>
+                        <li class="deroulant"><a href="#">Cours Complets</a>
+                            <ul class="sous">
+                                <li><a href="#">Cours HTML et CSS</a></li>
+                                <li><a href="#">Cours JavaScript</a></li>
+                                <li><a href="#">Cours PHP et MySQL</a></li>
+                                <li><a href="#">Cours Ruby</a></li>
+                                <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
+                                <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
+                                <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Entrainement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Joke</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Forum</a>
+                    </li>
+                </ul>
+                </nav>    
+            </div>
+         <!--End_Burger_nav-->
         <!--POPUP-->
         <div class="background" id="bg">  
             <section class="popup">
@@ -74,7 +111,6 @@
                     </form>
             </section>            
         <!--END POPUP-->
- 
     </header>
     <main>
         <section>
@@ -197,5 +233,6 @@
 
     </footer>
     <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>
