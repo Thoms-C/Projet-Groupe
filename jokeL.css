@@ -28,7 +28,7 @@ main{
     margin-top: 20px;
 }
 
-/*mise en page  titre des blagues*/
+/*///mise en page  titre des blagues///*/
 .H3{
     font-size: 30px;
     display: flex; 
@@ -38,37 +38,38 @@ main{
     margin: 80px 0px;
 }
 
-/*mise en page des sections de blagues*/
-
-
-/* fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus*/
+/* ///fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus///*/
 .survol{
     display: none;
     position: absolute;
-    width: 350px;
+    width: 25vw;
     text-align: center;
     flex-direction: column;
     padding-left: 0px;
-    color: white;
+    color: black;
     border-radius: 20px;
-    background-color: red;
+    background-color:#ffff01;
+    border: 10px  outset #ff0198;
     justify-content: center;
     align-items: center;
     z-index: 1;
     
 }
 .bouton{
-    background-color: white;
-    width: 50%;
+    color: black;
+    font-size: large;
+    width: 5vw;
+    background:#ff0198;
+    margin-bottom: 5px;
     
 }
 .pop p{
     margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+    font-size:150%;
 }
 .pop{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .blague{
     display: flex;
@@ -77,14 +78,13 @@ main{
     height: 700px;
   
 }
-/*fait apparaitre les blagues*/
+
 .blague div{
     height: 200px;
     width: 200px;   
 }
-/* dimensionne les images dave, data et perdue*/
+/*/// dimensionne les images dave, data et perdue///*/
 .dave{
-    
     background-image: url(images/dave.jpg);
     background-size: cover;
     background-position: center;
