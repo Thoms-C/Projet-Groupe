@@ -39,19 +39,31 @@ main{
 }
 
 /*mise en page des sections de blagues*/
-div li{
-    padding-bottom: 3px;
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-}
+
+
 /* fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus*/
 .survol{
     display: none;
+    position: absolute;
     width: 350px;
     text-align: center;
     flex-direction: column;
     padding-left: 0px;
+    color: white;
+    border-radius: 20px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.bouton{
+    background-color: white;
+    width: 50%;
+    
+}
+.pop p{
+    margin-bottom: 20px;
 }
 .pop{
     display: flex;
@@ -59,14 +71,13 @@ div li{
     align-items: center;
 }
 .blague{
-    position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
     height: 700px;
   
 }
-/*fait apparaitre les images*/
+/*fait apparaitre les blagues*/
 .blague div{
     height: 200px;
     width: 200px;   
@@ -108,15 +119,6 @@ div li{
 
 /*//////RESPONSIVE/////*/
 @media screen and (max-width:800px){
-    .blague{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .blague div{
-        height: 200px;
-        width: 200px;
-        margin: 25px 25px;
-    }
+.dave{}
 }
 
