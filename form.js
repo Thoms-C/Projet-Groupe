@@ -20,4 +20,4 @@ document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
     const PutLogForm = document.getElementById('connexion_form').style.display = 'flex';
     const HideCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'auto';
     const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
-})
+});
