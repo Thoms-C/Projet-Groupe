@@ -26,14 +26,19 @@ main{
 ////////////////*/
 
 header nav {
-    width: 100%;
     margin: 0 auto;
     background-color: white;
     position: sticky;
     top: 0px;
     background-color: #cbc7c8;
     padding: 10px 0 10px 0;
-    opacity: 0.8;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
 }
 
 header ul  {
@@ -42,19 +47,6 @@ header ul  {
 
 header nav ul {
     list-style-type: none;
-}
-
-header nav ul li {
-    float: left;
-    width: 14%;
-    text-align: center;
-    position: relative;
-}
-
-header nav ul::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 header nav a {
@@ -71,27 +63,13 @@ header nav a:hover {
 }
 
 .sous {
-    display: none;
     box-shadow: 0px 1px 2px black;
     background-color: #cbc7c8;
     position: absolute;
-    width: 100%;
-    z-index: 1000;
 }
 
 .nav > ul li:hover .sous{
     display: block;
-}
-
-.sous li {
-    float: none;
-    width: 100%;
-    text-align: left;
-}
-
-.sous a {
-    padding: 10px;
-    border-bottom: none;
 }
 
 .sous a:hover {
@@ -110,7 +88,6 @@ header nav a:hover {
 #site-search {
     color: #1995AD;
     margin-top: 10px;
-    display: none;
 }
 
 #connect {
@@ -118,7 +95,6 @@ header nav a:hover {
     color: #416777;
     border: 2px solid white;
     border-radius: 10px;
-    margin: 0 5px 0 0;
     height: 50px;
 }
 
@@ -134,7 +110,6 @@ header nav #connect a:hover {
 #inscript {
     border: 2px solid white;
     border-radius: 10px;
-    margin: 0 5px 0 0;
     height: 50px;
     font-size: 20px;
     color: #416777;
@@ -149,11 +124,12 @@ header nav #inscript a:hover {
 }
 
 .logoH {
-    width: 40px;
+    width: 70px;
     padding: 0px;
 }
 .lgo {
     padding: 0px;
+    width: 40px;
 }
 
 
@@ -326,7 +302,7 @@ header nav #inscript a:hover {
 
 .ct4 {
     grid-column: 3 / 4;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUSsCgmwJt3lDinad-6tah6WepIVdyOzR4rAtTLKRuS-anhVK0);
+    background-image: url(https://assets.aspeninstitute.org/content/uploads/2016/06/Team-Unity-Friends-Meeting-Partnership-Concept-000090609447_Large.jpg);
     background-size: cover;
     display: inline-block;
     position: relative;
