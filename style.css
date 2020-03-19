@@ -93,7 +93,7 @@ header nav a:hover {
 }
 
 .logoH {
-    width: 70px;
+    width: 5vw;
     margin: 15px 0 10px 0;
 }
 
@@ -866,7 +866,7 @@ footer section ul{
 }
 
 a:hover{
-    color: #cde144;
+    color: #008cff;
 }
 
 
