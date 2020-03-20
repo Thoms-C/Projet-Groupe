@@ -45,6 +45,7 @@ main{
     height: 70%;
     background-color:#ffff01;
     border: 10px  outset #ff0198;
+    border-radius: 20px;
     position: absolute;
     top: 0;
     justify-content: center;
