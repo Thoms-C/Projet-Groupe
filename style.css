@@ -943,7 +943,29 @@ a:hover{
     .menu_nav{
         justify-content: center;
     }
-   
+
+    
+
+    /*FOOTER*/
+    
+    footer section .flex {
+        flex-direction: column;
+        height: 30vh;
+    }
+    
+    .logo_footer img {
+        height: 15vw;
+        padding: 0;
+    }
+
+    .mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .li_footer {
+        margin-bottom: 1vh;
+    }
 
 }
 
