@@ -31,8 +31,8 @@ document.getElementById('close_log').addEventListener('click',() =>{
 
 // msg error
 const submit = document.getElementById('submit')
-submit.addEventListener('click',() =>{
-    if(submit.valueMissing){
-        submit.preventDefault();
-    }
-});
+submit.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    //Insert other awesome code here
+  })
+//msg_erreur.textcontent =  'Rempli bien tous les champs obligatoires (*)';

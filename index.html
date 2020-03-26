@@ -137,25 +137,24 @@
                 </section>
                     <!--inscription-->
                 <form method="post" id="inscription_form">
-                    <span class="msg_erreur">Rempli bien tous les champs obligatoires (*)</span>
+                    <span id="msg_erreur"></span>
                     <label for="name">Nom *</label>
-                    <input type="text" name="name" class="input_form"/>
+                    <input type="text" name="name" class="input_form" required/>
                     <label for="lastname">Prénom *</label>
-                    <input type="email" name="lastname" class="input_form"/>
+                    <input type="text" name="lastname" class="input_form" required/>
                     <label for="email">Email *</label>
-                    <input type="text" name="email" class="input_form"/>
+                    <input type="text" name="email" class="input_form" required/>
                     <label for="password">Mot de passe *</label>
-                    <input type="text" name="password" class="input_form"/>
+                    <input type="password" name="password" class="input_form" required/>
                     <input type="submit" name="nom" value="envoyer">
                     <p class="close_popup" id="close_register">Pas maintenant</p>
                 </form>
                     <!--connexion-->
                 <form method="post" id="connexion_form">
-                    <span class="msg_erreur">Rempli bien tous les champs obligatoires (*)</span>
                     <label class="email">Email *</label>
-                    <input type="text" name="name" class="input_form"/>
+                    <input type="email" name="email" class="input_form" required/>
                     <label>Mot de passe *</label>
-                    <input type="email" name="email" class="input_form"/>
+                    <input type="password" name="password" class="input_form" required/>
                     <input type="submit" name="nom" value="envoyer">
                     <p class="close_popup" id="close_log">Pas maintenant</p>
                 </form>

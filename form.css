@@ -76,10 +76,6 @@ body{
 
 /*BODY OF POPUP*/
 
-.msg_erreur{
-   display: none;
-}
-
 .popup form{
     min-height: calc(644px - 99px);
     display: flex;
