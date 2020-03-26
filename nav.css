@@ -43,13 +43,12 @@
         transition: right 0.8s cubic-bezier(1,0,0,1);
         z-index: 1;       
         }
-
-        .change {
+        .change 
 
 
 
 /*display menu nav*/
-.nav {
+.burgerNav {
  display: none;
 }
 

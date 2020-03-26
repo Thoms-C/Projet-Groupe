@@ -122,22 +122,21 @@ main{
 /*//////RESPONSIVE/////*/
 @media screen and (max-width:800px){
 .blague div{
-    width: 20vw;
+    width: 30vw;
     height: 15vh;
 }
 .H3 li{
     margin:70px 0 ;
 }
 .blague{
-    height: calc(950- 123);
-    
+    height: 600px;
 }
 
 .data{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .perdu{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .survol{
     width: auto;
