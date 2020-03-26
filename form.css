@@ -9,7 +9,7 @@ body{
     margin-left: 0;
 }
 
-.background{
+#bg{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -27,18 +27,20 @@ body{
 
 .popup{
   width: 30rem;
-  height: 40rem;
+  height: 45rem;
   border: 2px solid var(--logo_color);
   background-color: var(--grey_color);
   opacity: 1;
   position: fixed;
   text-align: center; 
   border-radius: 10px; 
+
 }
 
 /*FORM*/
 
 /*HEADER OF POPUP*/
+
 .popup h2, label{
     font-family: 'Baloo Chettan 2', cursive;
     color: var(--logo_color);
@@ -73,6 +75,11 @@ body{
 
 
 /*BODY OF POPUP*/
+
+.msg_erreur{
+   display: none;
+}
+
 .popup form{
     min-height: calc(644px - 99px);
     display: flex;
@@ -123,11 +130,12 @@ body{
     color: var(--logo_color);
 }
 
-.popup form p{
-    color: white;
+.close_popup{
+    margin-top: 10px;
+    color: var(--logo_color);
+    cursor: pointer;
 }
 
-.popup form p a{
-    color: var(--logo_color);
-    text-decoration: none;
+.close_popup:hover{
+    color: white;
 }

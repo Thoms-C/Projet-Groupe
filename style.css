@@ -861,7 +861,6 @@ footer section ul{
 .logo_footer img{
     width: auto;
     height: 5vw;
-    padding-right: 60px;
 }
 
 .a_footer{
@@ -881,7 +880,7 @@ a:hover{
 ///  RESPONSIVE  //
 /////////////////*/
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 800px) {
     .carousel {
         display: none;
     }
@@ -1020,6 +1019,33 @@ a:hover{
         border-bottom: black 1px solid;
         text-decoration: none;
     }
+<<<<<<< HEAD
+=======
+
+    
+
+    /*FOOTER*/
+    
+    footer section .flex {
+        flex-direction: column;
+        height: 30vh;
+    }
+    
+    .logo_footer img {
+        height: 15vw;
+        padding: 0;
+    }
+
+    .mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .li_footer {
+        margin-bottom: 1vh;
+    }
+
+>>>>>>> 9b0a8227a9aba29e34457d97fd83e39234676c4c
 }
 
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" typetext="css" href="style.css">
     <link rel="stylesheet" typetext="css" href="nav.css">
     <link rel="stylesheet" typetext="css" href="style.css">
+    <link rel="stylesheet" typetext="css" href="mg.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
 
     <title>Lexicum Ridiculum</title>
@@ -16,6 +17,55 @@
 
 <body >
     <header>
+                <!--BUUUUUUUUUUUUUUUUUUUUUUUUUUUUURGER
+        <div class="page">-->
+        <!--navigation-->
+       <!-- <nav class="nav_nav_nav">-->
+          <!--close button-->
+        <!--  <div class="nav__close"></div>
+          <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="#" title="Home">Accueil</a>
+            </li>
+            <li class="nav__item"><a id="cours"  class="nav__link" href="#" title="Cours">Cours Complets</a>
+              <ul class="ul_burger" id="sous_cours">
+                <li><a href="#">Cours HTML et CSS</a></li>
+                <li><a href="#">Cours JavaScript</a></li>
+                <li><a href="#">Cours PHP et MySQL</a></li>
+                <li><a href="#">Cours Ruby</a></li>
+                <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
+                <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
+                <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
+            </ul>
+            </li>
+            <li class="nav__item"><a id="entrainement" class="nav__link" href="#" title="Evenement">Entraînement</a>
+              <ul class="ul_burger" id="sous_entrainement">
+                <li><a href="#">Quizz</a></li>
+                <li><a href="#">Jeux</a></li>
+            </ul>
+            </li>
+            <li class="nav__item"><a id="joke" class="nav__link" href="#" title="Jokes">Jokes</a>
+             
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#" title="Forum">Forum</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#" title="Log In">Se connecter / S'inscrire</a>
+            </li>
+          </ul>
+        </nav>-->
+        <!--burger visu-->
+       <!-- <div class="burger">-->
+          <!--open navigation button-->
+    <!--      <div class="nav-open-btn">
+            <div class="barB"></div>
+            <div class="barB"></div>
+            <div class="barB"></div>
+          </div>
+        </div>
+      </div> -->
+    <!--FIN BUUUUUUUUUUUUUUURGER-->
         <nav class="nav">
             <ul class="menu_nav">
                 <li>
@@ -58,40 +108,76 @@
                 </div>           
             </ul>
         </nav>
+<<<<<<< HEAD
+=======
+
+        <!--Burger_nav-
+        
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cours complets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Entrainement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Joke</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Forum</a>
+                    </li>
+                </ul>
+            </nav>   --> 
+        
+ 
+>>>>>>> 9b0a8227a9aba29e34457d97fd83e39234676c4c
         <!--POPUP-->
         <div class="background" id="bg">
             <section class="popup">
                 <section class="section_h2">
                     <div id="bg_h2_conn" class="h2_form">
-                        <h2 class="connexion">Connecte toi :)</h2>
+                        <h2 class="connexion">Connecte toi</h2>
                     </div>
                     <div id="bg_h2_inscrp" class="h2_form">
-                        <h2 class="inscription">Inscris toi :)</h2>
+                        <h2 class="inscription">Inscris toi</h2>
                     </div>
                 </section>
+                    <!--inscription-->
                 <form method="post" id="inscription_form">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" />
-                    <label for="lastname">Prénom</label>
-                    <input type="email" name="lastname" />
-                    <label for="email">Email</label>
-                    <input type="text" name="email" />
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password" />
+                    <span class="msg_erreur">Rempli bien tous les champs obligatoires (*)</span>
+                    <label for="name">Nom *</label>
+                    <input type="text" name="name" class="input_form"/>
+                    <label for="lastname">Prénom *</label>
+                    <input type="email" name="lastname" class="input_form"/>
+                    <label for="email">Email *</label>
+                    <input type="text" name="email" class="input_form"/>
+                    <label for="password">Mot de passe *</label>
+                    <input type="text" name="password" class="input_form"/>
                     <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_register">Pas maintenant</p>
                 </form>
+                    <!--connexion-->
                 <form method="post" id="connexion_form">
-                    <label class="email">Email</label>
-                    <input type="text" name="name" />
-                    <label>Mot de passe</label>
-                    <input type="email" name="email" />
+                    <span class="msg_erreur">Rempli bien tous les champs obligatoires (*)</span>
+                    <label class="email">Email *</label>
+                    <input type="text" name="name" class="input_form"/>
+                    <label>Mot de passe *</label>
+                    <input type="email" name="email" class="input_form"/>
                     <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_log">Pas maintenant</p>
                 </form>
             </section>
         </div>
         <!--END POPUP-->
     </header>
     <main>
+        
         <section>
             <div class="carousel"></div>
         </section>
@@ -215,8 +301,8 @@
                     </a>
                     <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
                 </div>
-                <li class="logo_footer a_footer" href="index.html"><img src="images/lexique-5.png" alt="logo"></li>
-                <div>
+                    <li><a href="#" class="logo_footer a_footer"><img src="images/lexique-5.png" alt="logo"></a></li>
+                <div class="mentions">
                     <li class="li_footer"><a href="forum.html" class="a_footer">Forum</a></li>
                     <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
                     <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
@@ -226,6 +312,11 @@
 
     </footer>
     <script type="text/javascript" src="form.js"></script>
+<<<<<<< HEAD
+=======
+    <script type="text/javascript" src="nav.js"></script>
+    <script src="mg.js"></script>
+>>>>>>> 9b0a8227a9aba29e34457d97fd83e39234676c4c
 </body>
 
 </html>

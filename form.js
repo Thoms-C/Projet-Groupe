@@ -3,11 +3,6 @@ document.getElementById('connect').addEventListener('click',() =>{
     const openPopup = document.getElementById('bg').style.display = 'flex';
 });
 
-
-/*document.getElementById('BoutonQuiFerme').addEventListener('click',() =>{
-    const ClosePopup = document.getElementById('Popup').style.display = 'none';
-});
-*/
 document.getElementById('bg_h2_inscrp').addEventListener('click', ()=>{
     const BgRegisterTitleBlack = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
     const BgLogTitleWhite = document.getElementById('bg_h2_conn').style.background = 'white';
@@ -25,7 +20,16 @@ document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
     const HideCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'auto';
     const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
 });
+//close popup
+document.getElementById('close_register').addEventListener('click',() =>{
+    const closePopup = document.getElementById('bg').style.display = 'none';
+});
 
+document.getElementById('close_log').addEventListener('click',() =>{
+    const closePopup = document.getElementById('bg').style.display = 'none';
+});
+
+<<<<<<< HEAD
 /*menu burger responsive*/
 const btn = document.getElementById("burger"); /*appelle le bouton*/
 let burgerOpen = false
@@ -38,3 +42,12 @@ btn.addEventListener('click',() =>{
     burgerOpen =! burgerOpen
 })
 
+=======
+// msg error
+const submit = document.getElementById('submit')
+submit.addEventListener('click',() =>{
+    if(submit.valueMissing){
+        submit.preventDefault();
+    }
+});
+>>>>>>> 9b0a8227a9aba29e34457d97fd83e39234676c4c
