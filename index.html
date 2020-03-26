@@ -216,11 +216,13 @@
             </div>
         </section>
         <section class="contactForm">
-            <div class="flex contactForm">
-                <p>Phrase d'accroche pour inviter à entrer en contact !</p>
-                <button id="ptc">push to contact !</button>
+            <div class="flex onScreen">
+                <p>Besoin d'aide ?<br>
+                    Une blague à nous raconter ?!<br>
+                    Ecrivez nous !</p>
+                <button id="ptc">Contactez nous !</button>
             </div>
-            <div>
+            <div class="flex">
                 <form method="post" id="contactUs">
                     <label for="name">Nom</label>
                     <input type="text" name="name" />
@@ -228,6 +230,8 @@
                     <input type="email" name="lastname" />
                     <label for="email">Email</label>
                     <input type="text" name="email" />
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
                     <input type="submit" name="nom" value="envoyer">
                 </form>
             </div>    
