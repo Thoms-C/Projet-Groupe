@@ -45,7 +45,7 @@
                     <input type="search" id="site-search" name="search" aria-label="Search through site content"
                         placeholder="Tapez votre recherche">
                 </li>
-                <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
+                <li class="deroulant" id="connect"><p>Se connecter / S'inscrire</p></li>
             </ul>
         </nav>
 
@@ -217,23 +217,51 @@
         </section>
         <section class="contactForm">
             <div class="flex onScreen">
-                <p>Besoin d'aide ?<br>
-                    Une blague à nous raconter ?!<br>
+                <p>Besoin d'aide ? Une blague à nous raconter ?!<br>
                     Ecrivez nous !</p>
                 <button id="ptc">Contactez nous !</button>
             </div>
             <div class="flex">
-                <form method="post" id="contactUs">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" />
-                    <label for="lastname">Prénom</label>
-                    <input type="email" name="lastname" />
-                    <label for="email">Email</label>
-                    <input type="text" name="email" />
+                <form method="post" id="contactUs" class="formcss">
+                    <br>
+                    <div>
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <div>
+                        <label for="lastname">Prénom :</label>
+                        <input type="email" name="lastname" />
+                    </div>
+                    <div>
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" />
+                    </div>
+                    <div>
+                        <label for="Pays">Pays</label>
+                        <select name="Pays" id="Pays">
+                            <option>France</option>
+                            <option>Canada</option>
+                            <option>Royaume-unis</option>
+                            <option>Allemagne</option>
+                            <option>Belgique</option>
+                            <option>Espagne</option>
+                            <option>Luxembourg</option>
+                            <option>Suisse</option>
+                        </select>
+                    </div>
                     <label for="msg">Message :</label>
                     <textarea id="msg" name="user_message"></textarea>
-                    <input type="submit" name="nom" value="envoyer">
+                    <input id="submit" type="submit" name="nom" value="envoyer">
                 </form>
+                <!--Popup submit-->
+                <div class="submiting subOpen">
+                    <section class="flex submit" id="ouvrir">
+                        <p>
+                            Votre message a bien été envoyé.
+                        </p>
+                        <input class="button-sub" type="submit" name="close" value="Retour" id="openit">
+                    </section>
+                </div>
             </div>    
         </section>
     </main>
@@ -262,6 +290,7 @@
         </section>
 
     </footer>
+    <script type="text/javascript" src="form-contact-us.js"></script>
     <script type="text/javascript" src="form.js"></script>
     <script type="text/javascript" src="nav.js"></script>
 </body>

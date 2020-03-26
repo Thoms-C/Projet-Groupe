@@ -80,8 +80,8 @@ header nav a:hover {
     color                       : white;
     border                      : 2px solid white;
     border-radius               : 10px;
-    height                      : 50px;
     cursor                      : pointer;
+    padding: 10px;
 }
 
 #connect:hover{
@@ -859,8 +859,43 @@ header nav a:hover {
     border-radius:     7px 
 }
 
+.submiting  {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
 
+.submit {
+    flex-direction: column;
+}
 
+.submit > p {
+    padding-bottom: 10px;
+}
+
+.button-sub {
+    font-size                   : 20px;
+    border                      : 2px solid lightgray;
+    border-radius               : 10px;
+    cursor                      : pointer;
+    display: flex;
+    padding: 4px;
+}
+
+#ptc {
+    font-size                   : 20px;
+    border                      : 2px solid lightgray;
+    border-radius               : 10px;
+    cursor                      : pointer;
+    display: flex;
+    padding: 7px;
+    transition: 0.2s ease;
+}
+
+.formcss div label {
+    color: black;
+}
 
 /*/////////////////
 ///    FOOTER    //

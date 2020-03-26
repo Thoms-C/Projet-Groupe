@@ -39,7 +39,7 @@ body{
 /*FORM*/
 
 /*HEADER OF POPUP*/
-.popup h2, label{
+.popup h2 label{
     font-family: 'Baloo Chettan 2', cursive;
     color: var(--logo_color);
 }
