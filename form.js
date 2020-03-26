@@ -26,3 +26,10 @@ document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
     const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
 });
 
+// Forulaire de contact 
+
+const ptcButton = document.getElementById('ptc');
+
+ptcButton.addEventListener('click',() => {
+    const showContactForm = document.getElementById('contactUs').style.display = "flex"
+})
