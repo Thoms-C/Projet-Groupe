@@ -86,6 +86,8 @@ header nav a:hover {
     border-radius: 10px;
     height: 50px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 #connect:hover{
@@ -354,7 +356,7 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
 }
-
+.toggle_btn{display: none;}
 /*///////////////// 
 ///  videoTuto  // 
 ////////////////*/
@@ -872,6 +874,8 @@ a:hover{
     color: #008cff;
 }
 
+/*éteindre le burger*/
+.burgerMenu{display: none;}
 
 /*/////////////////
 ///  RESPONSIVE  //
@@ -921,6 +925,9 @@ a:hover{
     }
     /*NAV*/
 
+    header nav{
+        height: 40px;
+    }
     header nav ul li.ul.a {
         display: none;
         justify-content: center;
@@ -941,10 +948,78 @@ a:hover{
         display: none;
     }
     .menu_nav{
-        justify-content: center;
+        justify-content: space-between;
+        padding-top: 5px;
+       
+        
     }
-   
+    .logoH{
+        margin-left: 100px;
+        padding-top: 3px;
+        
+    }
+   /*///bouton burger///*/
 
+   /*dessine le bouton*/
+   .toggle_btn{
+       display: block;
+   }
+
+    .toggle_btn{
+        height: 35px;
+        width: 30px;
+        position: sticky;
+        float: right;
+        margin-right: 10px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .toggle_btn span{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        height: 3px;
+        width: 30px;
+        background-color: #008cff
+    }
+    .toggle_btn span:before{
+        position: absolute;
+        left: 0;
+        top: -10px;
+        height: 3px;
+        width: 30px;
+        background-color: #008cff;
+        content:" ";
+    }
+    .toggle_btn span:after{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 3px;
+        width: 30px;
+        background-color: #008cff;
+        content:" ";
+    }
+    /*menu du bouton burger*/
+    #ouvre{
+        position: absolute;
+        top: 6.5vw;
+        left: 78vw;
+        height:auto;
+        width: auto;
+        background-color:#cbc7c8;
+        opacity: 0.8;
+        z-index:2;}
+    
+    .A{
+        color:#008cff;
+        text-align: center;
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: black 1px solid;
+        text-decoration: none;
+    }
 }
 
 
