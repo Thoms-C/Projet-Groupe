@@ -3,11 +3,6 @@ document.getElementById('connect').addEventListener('click',() =>{
     const openPopup = document.getElementById('bg').style.display = 'flex';
 });
 
-
-/*document.getElementById('BoutonQuiFerme').addEventListener('click',() =>{
-    const ClosePopup = document.getElementById('Popup').style.display = 'none';
-});
-*/
 document.getElementById('bg_h2_inscrp').addEventListener('click', ()=>{
     const BgRegisterTitleBlack = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
     const BgLogTitleWhite = document.getElementById('bg_h2_conn').style.background = 'white';
@@ -25,4 +20,19 @@ document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
     const HideCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'auto';
     const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
 });
+//close popup
+document.getElementById('close_register').addEventListener('click',() =>{
+    const closePopup = document.getElementById('bg').style.display = 'none';
+});
 
+document.getElementById('close_log').addEventListener('click',() =>{
+    const closePopup = document.getElementById('bg').style.display = 'none';
+});
+
+// msg error
+const submit = document.getElementById('submit')
+submit.addEventListener('click',() =>{
+    if(submit.valueMissing){
+        submit.preventDefault();
+    }
+});
