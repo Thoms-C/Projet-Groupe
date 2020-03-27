@@ -1,48 +1,49 @@
 // open popup
 document.getElementById('connect').addEventListener('click',() =>{
-    const openPopup = document.getElementById('bg').style.display = 'flex';
+    const openPopup               = document.getElementById('bg').style.display = 'flex';
 });
 
 
 /*document.getElementById('BoutonQuiFerme').addEventListener('click',() =>{
-    const ClosePopup = document.getElementById('Popup').style.display = 'none';
+    const ClosePopup              = document.getElementById('Popup').style.display = 'none';
 });
 */
 document.getElementById('bg_h2_inscrp').addEventListener('click', ()=>{
-    const BgRegisterTitleBlack = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
-    const BgLogTitleWhite = document.getElementById('bg_h2_conn').style.background = 'white';
-    const hideLogForm = document.getElementById('connexion_form').style.display = 'none';
-    const PutRegisterForm = document.getElementById('inscription_form').style.display = 'flex';
-    const HideCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'auto';
-    const PutCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'pointer';
+    const BgRegisterTitleBlack    = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
+    const BgLogTitleWhite         = document.getElementById('bg_h2_conn').style.background = 'white';
+    const hideLogForm             = document.getElementById('connexion_form').style.display = 'none';
+    const PutRegisterForm         = document.getElementById('inscription_form').style.display = 'flex';
+    const HideCursorInRegister    = document.getElementById('bg_h2_inscrp').style.cursor = 'auto';
+    const PutCursorInLog          = document.getElementById('bg_h2_conn').style.cursor = 'pointer';
 });
 
 document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
-    const BgLogTitleBlack = document.getElementById('bg_h2_conn').style.background = 'var(--grey_color)';
-    const BgRegisterTitleWhite = document.getElementById('bg_h2_inscrp').style.background = 'white';
-    const hideRegisterForm = document.getElementById('inscription_form').style.display = 'none';
-    const PutLogForm = document.getElementById('connexion_form').style.display = 'flex';
-    const HideCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'auto';
-    const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
+    const BgLogTitleBlack         = document.getElementById('bg_h2_conn').style.background = 'var(--grey_color)';
+    const BgRegisterTitleWhite    = document.getElementById('bg_h2_inscrp').style.background = 'white';
+    const hideRegisterForm        = document.getElementById('inscription_form').style.display = 'none';
+    const PutLogForm              = document.getElementById('connexion_form').style.display = 'flex';
+    const HideCursorInLog         = document.getElementById('bg_h2_conn').style.cursor = 'auto';
+    const PutCursorInRegister     = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
 });
 
 
 
 // Forulaire de contact 
 
-const ptcButton = document.getElementById('ptc');
+const ptcButton                   = document.getElementById('ptc');
 
 ptcButton.addEventListener('click',() => {
-    const showContactForm = document.getElementById('contactUs').style.display = "flex"
+    const showContactForm         = document.getElementById('contactUs').style.display = "flex"
 })
 
-const submit = document.getElementById("submit");
-submit.addEventListener('click',() =>{
-  const open = document.getElementById('ourvrir').style.display = 'flex';
-  })
+/* const merciPop = document.getElementsByClassName('send');
+merciPop.addEventListener('click',() => {
+    const sayMerci = document.getElementsByClassName('submiting').style.display = 'flex'
+})
+
 
 const bouton2= document.getElementById('openit');
 bouton2.addEventListener('click',() =>{
   document.getElementById ('ouvrir').style.display = 'none';
   const merci = document.getElementById('')
-})
+}) */
