@@ -1,24 +1,24 @@
 // open popup
 document.getElementById('connect').addEventListener('click',() =>{
-    const openPopup = document.getElementById('bg').style.display = 'flex';
+    const openPopup               = document.getElementById('bg').style.display = 'flex';
 });
 
 document.getElementById('bg_h2_inscrp').addEventListener('click', ()=>{
-    const BgRegisterTitleBlack = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
-    const BgLogTitleWhite = document.getElementById('bg_h2_conn').style.background = 'white';
-    const hideLogForm = document.getElementById('connexion_form').style.display = 'none';
-    const PutRegisterForm = document.getElementById('inscription_form').style.display = 'flex';
-    const HideCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'auto';
-    const PutCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'pointer';
+    const BgRegisterTitleBlack    = document.getElementById('bg_h2_inscrp').style.background = 'var(--grey_color)';
+    const BgLogTitleWhite         = document.getElementById('bg_h2_conn').style.background = 'white';
+    const hideLogForm             = document.getElementById('connexion_form').style.display = 'none';
+    const PutRegisterForm         = document.getElementById('inscription_form').style.display = 'flex';
+    const HideCursorInRegister    = document.getElementById('bg_h2_inscrp').style.cursor = 'auto';
+    const PutCursorInLog          = document.getElementById('bg_h2_conn').style.cursor = 'pointer';
 });
 
 document.getElementById('bg_h2_conn').addEventListener('click', ()=>{
-    const BgLogTitleBlack = document.getElementById('bg_h2_conn').style.background = 'var(--grey_color)';
-    const BgRegisterTitleWhite = document.getElementById('bg_h2_inscrp').style.background = 'white';
-    const hideRegisterForm = document.getElementById('inscription_form').style.display = 'none';
-    const PutLogForm = document.getElementById('connexion_form').style.display = 'flex';
-    const HideCursorInLog = document.getElementById('bg_h2_conn').style.cursor = 'auto';
-    const PutCursorInRegister = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
+    const BgLogTitleBlack         = document.getElementById('bg_h2_conn').style.background = 'var(--grey_color)';
+    const BgRegisterTitleWhite    = document.getElementById('bg_h2_inscrp').style.background = 'white';
+    const hideRegisterForm        = document.getElementById('inscription_form').style.display = 'none';
+    const PutLogForm              = document.getElementById('connexion_form').style.display = 'flex';
+    const HideCursorInLog         = document.getElementById('bg_h2_conn').style.cursor = 'auto';
+    const PutCursorInRegister     = document.getElementById('bg_h2_inscrp').style.cursor = 'pointer';
 });
 //close popup
 document.getElementById('close_register').addEventListener('click',() =>{
@@ -34,7 +34,7 @@ document.getElementById('close_log').addEventListener('click',() =>{
 const btn = document.getElementById("burger"); /*appelle le bouton*/
 let burgerOpen = false
 
-/*si burgerOpen faux, ouvre le burger, puis change en burgerOpen vrai donc clic suivant, ferme*/
+/* si burgerOpen faux, ouvre le burger, puis change en burgerOpen vrai donc clic suivant, ferme*/
 btn.addEventListener('click',() =>{
   if (burgerOpen=== false){
   const ouvreToi= document.getElementById ('ouvre').style.display = 'block';}
@@ -43,18 +43,24 @@ btn.addEventListener('click',() =>{
 })
 
 
-// msg error
-const submit = document.getElementById('submit')
 
-submit.addEventListener("click", (evt)=>{
-    evt.preventDefault();
-    //Insert other awesome code here
-  })
-//msg_erreur.textcontent =  'Rempli bien tous les champs obligatoires (*)';
 
-submit.addEventListener('click',() =>{
-    if(submit.valueMissing){
-        submit.preventDefault();
-    }
-});
+// Forulaire de contact 
 
+const ptcButton                   = document.getElementById('ptc');
+
+ptcButton.addEventListener('click',() => {
+    const showContactForm         = document.getElementById('contactUs').style.display = "flex"
+})
+
+/* const merciPop = document.getElementsByClassName('send');
+merciPop.addEventListener('click',() => {
+    const sayMerci = document.getElementsByClassName('submiting').style.display = 'flex'
+})
+
+
+const bouton2= document.getElementById('openit');
+bouton2.addEventListener('click',() =>{
+  document.getElementById ('ouvrir').style.display = 'none';
+  const merci = document.getElementById('')
+}) */
