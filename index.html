@@ -204,6 +204,53 @@
                 </article>
             </div>
         </section>
+        <section class="contactForm">
+            <div class="flex onScreen">
+                <p>Besoin d'aide ? Une blague à nous raconter ?!<br>
+                    Ecrivez nous !</p>
+                <button id="ptc">Contactez nous !</button>
+            </div>
+            <div class="flex">
+                <form method="post" id="contactUs" class="formcss">
+                    
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" />
+                   
+                        <label for="lastname">Prénom :</label>
+                        <input type="email" name="lastname" />
+                   
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" />
+                    
+                        <label for="Pays">Pays</label>
+                        <select name="Pays" id="Pays">
+                            <option>France</option>
+                            <option>Canada</option>
+                            <option>Royaume-unis</option>
+                            <option>Allemagne</option>
+                            <option>Belgique</option>
+                            <option>Espagne</option>
+                            <option>Luxembourg</option>
+                            <option>Suisse</option>
+                            <option>Autre</option>
+                        </select>
+                    
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    <button id="btnMerci">Envoyer</button>
+                    <!-- <input id="send" type="submit" name="name" value="Envoyer"> -->
+                </form>
+                <!--Popup submit-->
+                <!-- <div class="submiting subOpen">
+                    <section class="flex submit" id="ouvrir">
+                        <p>
+                            Votre message a bien été envoyé.
+                        </p>
+                        <input class="button-sub" type="submit" name="close" value="Retour" id="openit">
+                    </section>
+                </div> -->
+            </div>    
+        </section>
     </main>
     <footer>
         <section>
@@ -230,6 +277,7 @@
         </section>
 
     </footer>
+    <script type="text/javascript" src="form-contact-us.js"></script>
     <script type="text/javascript" src="form.js"></script>
 </body>
 </html>
