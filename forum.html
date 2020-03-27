@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" typetext="css" href="style.css">
-    <link rel="stylesheet" typetext="css" href="forum.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
-    <title>Lexicum Ridiculum</title>
-</head>
-<body>
-    <header>
-        <nav class="nav">
-            <ul class="menu_nav">
-                <li>
-                    <a href="index.html"><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
-                </li>
-                <li class="deroulant"><a href="#">Cours Complets</a>
-                    <ul class="sous">
-                        <li><a href="#">Cours HTML et CSS</a></li>
-                        <li><a href="#">Cours JavaScript</a></li>
-                        <li><a href="#">Cours PHP et MySQL</a></li>
-                        <li><a href="#">Cours Ruby</a></li>
-                        <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
-                        <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
-                        <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
-                    </ul>
-                </li>
-                <li class="deroulant"><a href="#">Entrainement</a>
-                    <ul class="sous">
-                        <li><a href="#">Quizz</a></li>
-                        <li><a href="#">Jeux</a></li>
-                    </ul>
-                </li>
-                <li class="deroulant" id="jokes"><a href="Joke.html">Jokes</li></a>
-                <li class="deroulant" id="forum"><a href="forum.html">Forum</li></a>
-                <li class="search">
-                    <label for="site-search"></label>
-                    <input type="search" id="site-search" name="search" aria-label="Search through site content"
-                        placeholder="Tapez votre recherche">
-                </li>
-                <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
-            </ul>
-        </nav>
-
-        <!---Burger_nav-->
-        
-        <!--    <nav class="navbar">
-                <div class="hamburger-menu">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Cours complets</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" typetext="css" href="style.css">
+        <link rel="stylesheet" typetext="css" href="forum.css">
+        <link rel="stylesheet" typetext="css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
+        <title>Lexicum Ridiculum</title>
+    </head>
+    <body >
+        <header>
+            <nav class="nav">
+                <ul class="menu_nav">
+                    <li>
+                        <a href="index.html"><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Entrainement</a>
+                    <li class="deroulant"><a href="#">Cours Complets</a>
+                        <ul class="sous">
+                            <li><a href="entravaux.html">Cours HTML et CSS</a></li>
+                            <li><a href="entravaux.html">Cours JavaScript</a></li>
+                            <li><a href="entravaux.html">Cours PHP et MySQL</a></li>
+                            <li><a href="entravaux.html">Cours Ruby</a></li>
+                            <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
+                            <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
+                            <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Joke</a>
+                    <li class="deroulant"><a href="#">Entrainement</a>
+                        <ul class="sous">
+                            <li><a href="entravaux.html">Quizz</a></li>
+                            <li><a href="jeux.html">Jeux</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Forum</a>
+                    <li class="deroulant" id="jokes"><a href="Joke.html">Jokes</li></a>
+                    <li class="deroulant" id="forum"><a href="forum.html">Forum</li></a>
+                    <li class="search">
+                        <label for="site-search"></label>
+                        <input type="search" id="site-search" name="search" aria-label="Search through site content"
+                            placeholder="Tapez votre recherche">
                     </li>
+                    <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
+                <!--Mon mien de burger-->
+                    <div class="toggle_btn" id="burger">
+                        <span></span>
+                    </div>
+                    <div class="burgerMenu burgerNav" id="ouvre">
+                            <a href="Joke.html" class="A">Jokes</a>
+                            <a href="forum.html" class="A">Forum</a>
+                            <a href="jeux.html" class = "A">Entrainement</a>
+                            <a href="entravaux.html" class="A">Cours Complets</a>
+                            </li>
+                        </ul>    
+                    </div>           
                 </ul>
             </nav>
-        -->
-        <!--End_Burger_nav-->
-        
-        <!--POPUP-->
-        <div class="background" id="bg">
-            <section class="popup">
-                <section class="section_h2">
-                    <div id="bg_h2_conn" class="h2_form">
-                        <h2 class="connexion">Connecte toi :)</h2>
-                    </div>
-                    <div id="bg_h2_inscrp" class="h2_form">
-                        <h2 class="inscription">Inscris toi :)</h2>
-                    </div>
+            <!--POPUP-->
+            <div class="background" id="bg">
+                <section class="popup">
+                    <section class="section_h2">
+                        <div id="bg_h2_conn" class="h2_form">
+                            <h2 class="connexion">Connecte toi</h2>
+                        </div>
+                        <div id="bg_h2_inscrp" class="h2_form">
+                            <h2 class="inscription">Inscris toi</h2>
+                        </div>
+                    </section>
+                        <!--inscription-->
+                    <form method="post" id="inscription_form">
+                        <span id="msg_erreur"></span>
+                        <label for="name">Nom *</label>
+                        <input type="text" name="name" class="input_form" required/>
+                        <label for="lastname">Prénom *</label>
+                        <input type="text" name="lastname" class="input_form" required/>
+                        <label for="email">Email *</label>
+                        <input type="text" name="email" class="input_form" required/>
+                        <label for="password">Mot de passe *</label>
+                        <input type="password" name="password" class="input_form" required/>
+                        <input type="submit" name="nom" value="envoyer">
+                        <p class="close_popup" id="close_register">Pas maintenant</p>
+                    </form>
+                        <!--connexion-->
+                    <form method="post" id="connexion_form">
+                        <label class="email">Email *</label>
+                        <input type="email" name="email" class="input_form" required/>
+                        <label>Mot de passe *</label>
+                        <input type="password" name="password" class="input_form" required/>
+                        <input type="submit" name="nom" value="envoyer">
+                        <p class="close_popup" id="close_log">Pas maintenant</p>
+                    </form>
                 </section>
-                <form method="post" id="inscription_form">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" />
-                    <label for="lastname">Prénom</label>
-                    <input type="email" name="lastname" />
-                    <label for="email">Email</label>
-                    <input type="text" name="email" />
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password" />
-                    <input type="submit" name="nom" value="envoyer">
-                </form>
-                <form method="post" id="connexion_form">
-                    <label class="email">Email</label>
-                    <input type="text" name="name" />
-                    <label>Mot de passe</label>
-                    <input type="email" name="email" />
-                    <input type="submit" name="nom" value="envoyer">
-                </form>
-            </section>
-        </div>
-        <!--END POPUP-->
-    </header>
+            </div>
+            <!--END POPUP-->
+        </header>
     <main>
         <!--forum -->
         <section id="contener">
@@ -237,8 +228,8 @@
                 </div>
             </ul>
         </section>
+
     </footer>
     <script type="text/javascript" src="form.js"></script>
-    <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>
