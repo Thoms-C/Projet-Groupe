@@ -23,10 +23,10 @@
                 </li>
                 <li class="deroulant"><a href="#">Cours Complets</a>
                     <ul class="sous">
-                        <li><a href="#">Cours HTML et CSS</a></li>
-                        <li><a href="#">Cours JavaScript</a></li>
-                        <li><a href="#">Cours PHP et MySQL</a></li>
-                        <li><a href="#">Cours Ruby</a></li>
+                        <li><a href="entravaux.html">Cours HTML et CSS</a></li>
+                        <li><a href="entravaux.html">Cours JavaScript</a></li>
+                        <li><a href="entravaux.html">Cours PHP et MySQL</a></li>
+                        <li><a href="entravaux.html">Cours Ruby</a></li>
                         <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
                         <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
                         <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
@@ -34,7 +34,7 @@
                 </li>
                 <li class="deroulant"><a href="#">Entrainement</a>
                     <ul class="sous">
-                        <li><a href="#">Quizz</a></li>
+                        <li><a href="entravaux.html">Quizz</a></li>
                         <li><a href="jeux.html">Jeux</a></li>
                     </ul>
                 </li>
@@ -51,12 +51,13 @@
                     <span></span>
                 </div>
                 <div class="burgerMenu burgerNav" id="ouvre">
-                    <a href="Joke.html" class="A">Jokes</a>
-                    <a href="forum.html" class="A">Forum</a>
-                    <a href="#" class = "A">Entrainement</a>
-                    <a href="#" class="A">Cours Complets</a>
-                </div>
-               
+                        <a href="Joke.html" class="A">Jokes</a>
+                        <a href="forum.html" class="A">Forum</a>
+                        <a href="jeux.html" class = "A">Entrainement</a>
+                        <a href="entravaux.html" class="A">Cours Complets</a>
+                        </li>
+                    </ul>    
+                </div>           
             </ul>
         </nav>
         <!--POPUP-->
@@ -64,29 +65,34 @@
             <section class="popup">
                 <section class="section_h2">
                     <div id="bg_h2_conn" class="h2_form">
-                        <h2 class="connexion">Connecte toi :)</h2>
+                        <h2 class="connexion">Connecte toi</h2>
                     </div>
                     <div id="bg_h2_inscrp" class="h2_form">
-                        <h2 class="inscription">Inscris toi :)</h2>
+                        <h2 class="inscription">Inscris toi</h2>
                     </div>
                 </section>
+                    <!--inscription-->
                 <form method="post" id="inscription_form">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" />
-                    <label for="lastname">Prénom</label>
-                    <input type="email" name="lastname" />
-                    <label for="email">Email</label>
-                    <input type="text" name="email" />
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password" />
+                    <span id="msg_erreur"></span>
+                    <label for="name">Nom *</label>
+                    <input type="text" name="name" class="input_form" required/>
+                    <label for="lastname">Prénom *</label>
+                    <input type="text" name="lastname" class="input_form" required/>
+                    <label for="email">Email *</label>
+                    <input type="text" name="email" class="input_form" required/>
+                    <label for="password">Mot de passe *</label>
+                    <input type="password" name="password" class="input_form" required/>
                     <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_register">Pas maintenant</p>
                 </form>
+                    <!--connexion-->
                 <form method="post" id="connexion_form">
-                    <label class="email">Email</label>
-                    <input type="text" name="name" />
-                    <label>Mot de passe</label>
-                    <input type="email" name="email" />
+                    <label class="email">Email *</label>
+                    <input type="email" name="email" class="input_form" required/>
+                    <label>Mot de passe *</label>
+                    <input type="password" name="password" class="input_form" required/>
                     <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_log">Pas maintenant</p>
                 </form>
             </section>
         </div>
@@ -102,7 +108,14 @@
                     <p>Tu veux apprendre la programmation, fonce!</p>
                 </div>
             </div>
-
+            <div class = "text">
+                <div class ="compute lien">
+                    <a href="http://compute-it.toxicode.fr/" target="_blank">COMPUTE IT</a>
+                </div>
+                <div class = "align3">
+                    <p>Prenez la place de l'ordinateur et devenez le roi/la reine de la programmation</p>
+                </div>
+            </div>
             <div class = "text">
                 <div class="frog lien">
                     <a href="https://flexboxfroggy.com/#fr" target="_blank" >FLEXBOX FROGGY</a>
