@@ -1,0 +1,150 @@
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px; 
+}
+/*////DIMENSION DU BANDEAU////*/
+.carambar{
+    background-image: url(images/fondJoke.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jokeLoic{
+    font-size: 8vw;
+    text-align: center;  
+}
+
+/*//PHOTO DES BODIES//*/
+.bodie{
+    height: 50px;
+    width: 45px;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*///mise en page  titre des blagues///*/
+.H3{
+    font-size: 30px;
+    display: flex; 
+    flex-direction: column;   
+    padding: 0; 
+}
+.H3 li{
+    margin: 80px 0px;
+}
+
+/* ///fait disparaitre les blagues pour les faire apparaitre en JS en cliquant dessus///*/
+.survol{
+    width: 50%;
+    height: 70%;
+    background-color:#ffff01;
+    border: 10px  outset #ff0198;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+.bouton{
+    color: black;
+    font-size: large;
+    width: 5vw;
+    background:#ff0198;
+    margin-bottom: 5px;
+    
+}
+.pop p{
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+    font-size:150%;
+}
+.pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blague{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+  
+}
+
+.blague div{
+    height: 30vh;
+    width: 15vw;   
+}
+/*/// dimensionne les images dave, data et perdue///*/
+.dave{
+    background-image: url(images/dave.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    color: white;
+    margin: 20px;
+    
+}
+
+.data{
+    background-image: url(images/data.jpg);
+    background-size: cover;
+    background-position: center; 
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+    margin: 20px;   
+}
+.perdu{
+    color: white;
+    background-image: url(images/perdu.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin: 20px;
+
+}
+
+/*//////RESPONSIVE/////*/
+@media screen and (max-width:800px){
+.blague div{
+    width: 30vw;
+    height: 15vh;
+}
+.H3 li{
+    margin:70px 0 ;
+}
+.blague{
+    height: 600px;
+}
+
+.data{
+    margin-top: 40px;
+}
+.perdu{
+    margin-top: 40px;
+}
+.survol{
+    width: auto;
+    height: auto;
+}
+.bouton{
+    width: auto;
+}
+
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" typetext="css" href="style.css">
+    <link rel="stylesheet" typetext="css" href="mg.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap" rel="stylesheet">
+
+    <title>Lexicum Ridiculum</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="menu_nav">
+                <li>
+                    <a href="index.html"><img src="images/lexique-5.png" alt="logo" class="logoH"></a>
+                </li>
+                <li class="deroulant"><a href="#">Cours Complets</a>
+                    <ul class="sous">
+                        <li><a href="entravaux.html">Cours HTML et CSS</a></li>
+                        <li><a href="entravaux.html">Cours JavaScript</a></li>
+                        <li><a href="entravaux.html">Cours PHP et MySQL</a></li>
+                        <li><a href="entravaux.html">Cours Ruby</a></li>
+                        <li><a href="https://doc.ubuntu-fr.org/terminal" target="_blank">Console</a></li>
+                        <li><a href="https://git-scm.com/docs" target="_blank">GIT</a></li>
+                        <li><a href="https://wiki.python.org/moin/BeginnersGuide" target="_blank">Python</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant"><a href="#">Entrainement</a>
+                    <ul class="sous">
+                        <li><a href="entravaux.html">Quizz</a></li>
+                        <li><a href="jeux.html">Jeux</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant" id="jokes"><a href="Joke.html">Jokes</li></a>
+                <li class="deroulant" id="forum"><a href="forum.html">Forum</li></a>
+                <li class="search">
+                    <label for="site-search"></label>
+                    <input type="search" id="site-search" name="search" aria-label="Search through site content"
+                        placeholder="Tapez votre recherche">
+                </li>
+                <li class="deroulant" id="connect">Se connecter / S'inscrire</li>
+            <!--Mon mien de burger-->
+                <div class="toggle_btn" id="burger">
+                    <span></span>
+                </div>
+                <div class="burgerMenu burgerNav" id="ouvre">
+                        <a href="Joke.html" class="A">Jokes</a>
+                        <a href="forum.html" class="A">Forum</a>
+                        <a href="jeux.html" class = "A">Entrainement</a>
+                        <a href="entravaux.html" class="A">Cours Complets</a>
+                        </li>
+                    </ul>    
+                </div>           
+            </ul>
+        </nav>
+        <div class="background" id="bg">
+            <section class="popup">
+                <section class="section_h2">
+                    <div id="bg_h2_conn" class="h2_form">
+                        <h2 class="connexion">Connecte toi</h2>
+                    </div>
+                    <div id="bg_h2_inscrp" class="h2_form">
+                        <h2 class="inscription">Inscris toi</h2>
+                    </div>
+                </section>
+                    <!--inscription-->
+                <form method="post" id="inscription_form">
+                    <span id="msg_erreur"></span>
+                    <label for="name">Nom *</label>
+                    <input type="text" name="name" class="input_form" required/>
+                    <label for="lastname">Prénom *</label>
+                    <input type="text" name="lastname" class="input_form" required/>
+                    <label for="email">Email *</label>
+                    <input type="text" name="email" class="input_form" required/>
+                    <label for="password">Mot de passe *</label>
+                    <input type="password" name="password" class="input_form" required/>
+                    <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_register">Pas maintenant</p>
+                </form>
+                    <!--connexion-->
+                <form method="post" id="connexion_form">
+                    <label class="email">Email *</label>
+                    <input type="email" name="email" class="input_form" required/>
+                    <label>Mot de passe *</label>
+                    <input type="password" name="password" class="input_form" required/>
+                    <input type="submit" name="nom" value="envoyer">
+                    <p class="close_popup" id="close_log">Pas maintenant</p>
+                </form>
+            </section>
+        </div>
+        <!--END POPUP-->
+    </header>
+    
+    <main>  
+        <section>
+            <div class="carousel"></div>
+        </section>
+        <h2>Tech News</h2>
+        <section>
+            <div class="conteneur">
+                <div class="ct1 slidedown">
+                    <a href="https://www.grafikart.fr/formations/debuter-javascript" target="_blank">
+                        <span class="ct1text">Js c'est fantastique !</span>
+                    </a>
+                </div>
+                <div class="ct2 slidedown">
+                    <a href="Joke.html">
+                        <span class="ct2text">tu t'es égaré inconnu ? Viens ici et raconte nous ta meilleur blague de
+                            dév ! </span>
+                    </a>
+                </div>
+                <div class="ct3 slidedown">
+                    <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"
+                        target="_blank">
+                        <span class="ct3text">Si tu veux apprendre les bases du développement web, c'est ici que tout
+                            commence !<br>Grâce à ces petits tutos tu vas devenir un vrai petit développeur en herbe
+                            !</span>
+                    </a>
+                </div>
+                <div class="ct4 slidedown">
+                    <a href="https://web.developpez.com/" target="_blank">
+                        <span class="ct4text">Tu n'es pas seul jeune vagabond, viens te ressourcer avec tes sembables en
+                            ce lieu</span>
+                    </a>
+                </div>
+                <div class="ct5 slidedown">
+                    <a href="https://graphiste.com/blog/bonnes-pratiques-css-feuille-style" target="_blank">
+                        <span class="ct5text">Tuto du jour, quelque chose qui peut toujours t'être utile !</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <h2>Les nouveaux tutoriel</h2>
+        <section>
+            <div class="vidstuto">
+                <article class="vids1 slide">
+                    <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">
+                        <span class="textvid1">Introduction à Bootstrap</span>
+                    </a>
+                </article>
+                <article class="vids2 slide">
+                    <a href="https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript"
+                        target="_blank">
+                        <span class="textvid2">Découvrez JavaScript !</span>
+                    </a>
+                </article>
+                <article class="vids3 slide">
+                    <a href="https://www.cnetfrance.fr/news/" target="_blank">
+                        <span class="textvid3">News Tech</span>
+                    </a>
+                </article>
+                <article class="vids4 slide">
+                    <a href="https://fr.reactjs.org/tutorial/tutorial.html" target="_blank">
+                        <span class="textvid4">Débuter avec React</span>
+                    </a>
+                </article>
+                <article class="vids5 slide">
+                    <a href="https://symfony.com/doc/current/index.html#gsc.tab=0" target="_blank">
+                        <span class="textvid5">Documentation Symfony</span>
+                    </a>
+                </article>
+                </article>
+                <article class="vids6 slide">
+                    <a href="https://symfony.com/doc/3.0/setup.html" target="_blank">
+                        <span class="textvid6">Paramétrer Symfony</span>
+                    </a>
+                </article>
+                <article class="vids7 slide">
+                    <a href="https://www.ruby-lang.org/fr/documentation/" target="_blank">
+                        <span class="textvid7">Les débuts sur Ruby</span>
+                    </a>
+                </article>
+                <article class="vids8 slide">
+                    <a href="https://www.jqwidgets.com/vue/?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYAiAAEgLfifD_BwE"
+                        target="_blank">
+                        <span class="textvid8">Vue niveau intermédiaire</span>
+                    </a>
+                </article>
+                <article class="vids9 slide">
+                    <a href="https://dyma.fr/vue?gclid=EAIaIQobChMI0omgiOOe6AIVUUPTCh2MmA6hEAAYASAAEgKhAPD_BwE"
+                        target="_blank">
+                        <span class="textvid9">Découvrez Vue</span>
+                    </a>
+                </article>
+                <article class="vids10 slide">
+                    <a href="http://css.mammouthland.net/css3/" target="_blank">
+                        <span class="textvid10">Démarrer avec CSS</span>
+                    </a>
+                </article>
+                <article class="vids11 slide">
+                    <a href="https://git-scm.com/doc" target="_blank">
+                        <span class="textvid11">Git documentation</span>
+                    </a>
+                </article>
+                <article class="vids12 slide">
+                    <a href="https://github.com/" target="_blank">
+                        <span class="textvid12">Découvrez Github</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section class="contactForm">
+            <div class="flex onScreen">
+                <p>Besoin d'aide ? Une blague à nous raconter ?!<br>
+                    Ecrivez nous !</p>
+                <button id="ptc">Contactez nous !</button>
+            </div>
+            <div class="flex">
+                <form method="post" id="contactUs" class="formcss">
+                    
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" />
+                   
+                        <label for="lastname">Prénom :</label>
+                        <input type="email" name="lastname" />
+                   
+                        <label for="email">Email :</label>
+                        <input type="text" name="email" />
+                    
+                        <label for="Pays">Pays</label>
+                        <select name="Pays" id="Pays">
+                            <option>France</option>
+                            <option>Canada</option>
+                            <option>Royaume-unis</option>
+                            <option>Allemagne</option>
+                            <option>Belgique</option>
+                            <option>Espagne</option>
+                            <option>Luxembourg</option>
+                            <option>Suisse</option>
+                            <option>Autre</option>
+                        </select>
+                    
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    <button id="btnMerci">Envoyer</button>
+                    <!-- <input id="send" type="submit" name="name" value="Envoyer"> -->
+                </form>
+                <!--Popup submit-->
+                <!-- <div class="submiting subOpen">
+                    <section class="flex submit" id="ouvrir">
+                        <p>
+                            Votre message a bien été envoyé.
+                        </p>
+                        <input class="button-sub" type="submit" name="close" value="Retour" id="openit">
+                    </section>
+                </div> -->
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <section>
+            <ul class="flex">
+                <div>
+                    <a href="https://fr-fr.facebook.com/" target="_blank" class="a_footer">
+                        <li style="font-size:24px" class="fa">&#xf230;</li>
+                    </a>
+                    <a href="https://twitter.com/login?lang=fr" target="_blank" class="a_footer">
+                        <li style="font-size:24px" class="fa li_footer">&#xf081;</li>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="a_footer">
+                        <li class="fa fa-github" style="font-size:36px"></li>
+                    </a>
+                    <li style="font-size:24px" class="fa git a_footer">&#xf1d3;</li>
+                </div>
+                    <li><a href="#" class="logo_footer a_footer"><img src="images/lexique-5.png" alt="logo"></a></li>
+                <div class="mentions">
+                    <li class="li_footer"><a href="forum.html" class="a_footer">Forum</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Mentions légales</a></li>
+                    <li class="li_footer"><a href="" class="a_footer">Charte</a></li>
+                </div>
+            </ul>
+        </section>
+
+    </footer>
+    <script type="text/javascript" src="form-contact-us.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+</html>

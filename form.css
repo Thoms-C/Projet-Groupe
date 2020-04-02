@@ -1,0 +1,137 @@
+/*COULEURS  color: var(--primary_color);*/
+:root{
+    --logo_color: #008cff;
+    --grey_color: #cbc7c8;
+}
+
+/*BODY*/
+body{
+    margin-left: 0;
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*filter: blur(4px);*/
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+
+/*POPUP*/
+
+.popup{
+  width: 30rem;
+  height: 45rem;
+  border: 2px solid var(--logo_color);
+  background-color: var(--grey_color);
+  opacity: 1;
+  position: fixed;
+  text-align: center; 
+  border-radius: 10px; 
+
+}
+
+/*FORM*/
+
+/*HEADER OF POPUP*/
+
+.popup h2, label{
+    font-family: 'Baloo Chettan 2', cursive;
+    color: var(--logo_color);
+}
+
+.popup .section_h2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.popup .h2_form{
+    width: 50%;
+}
+
+#bg_h2_conn{
+    border-radius: 7px 0 0 0;
+    background-color: var(--grey_color);
+    cursor: auto;
+}
+
+#bg_h2_inscrp{
+    border-radius: 0 7px 0 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.popup h2{
+    font-size: 30px;
+}
+/***************************/
+
+
+/*BODY OF POPUP*/
+
+.popup form{
+    min-height: calc(644px - 99px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inscription_form{
+    display: none;
+}
+
+#inscription_form label:nth-child(1){
+    padding-top: 10px;
+}
+
+#connexion_form .email{
+    margin-top: 5rem;
+    display: flex;
+}
+
+.popup label{
+    font-size: 20px;
+}
+
+.popup input{
+    width: 80%;
+    margin-bottom:5px;
+    border-radius: 10px;
+    border: var(--logo_color) solid 1px;
+    box-shadow: none;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+
+.popup input[type=submit]{
+    background-color: var(--logo_color);
+    border: 1px solid var(--logo_color);
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-bottom: 2px;
+}
+
+.popup input[type=submit]:hover{
+    background-color: white;
+    border: 1px solid var(--logo_color);
+    color: var(--logo_color);
+}
+
+.close_popup{
+    margin-top: 10px;
+    color: var(--logo_color);
+    cursor: pointer;
+}
+
+.close_popup:hover{
+    color: white;
+}
